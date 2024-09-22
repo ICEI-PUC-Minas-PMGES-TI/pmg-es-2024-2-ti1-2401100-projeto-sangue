@@ -2,17 +2,24 @@
 
 Escreva um ou dois parágrafo resumindo o objetivo do seu projeto.
 
+
+Nosso projeto tem como objetivo principal conectar pessoas que possuem interesse em doar sangue à pessoas que precisam de doações. Através de publicações, campanhas e notícias esperamos que o nosso projeto alcançe muitas pessoas e que ajude as pessoas.
+
 ## Alunos integrantes da equipe
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Bernardo Carvalho Denucci
+* Éder Jair Andrade
+* Kayke Emanoel de Souza Santos
+* Lucas Fonseca Martins
+* Mariana Fonseca Reis Tavares
+* Marina Silva Diniz
+* Matheus Cordeiro Berto
 
 ## Professores responsáveis
 
-* Nome completo do professor 1
-* Nome completo do professor 2
+* Diego Augusto de Faria Barros
+* João Paulo Carneiro Aramuni
+* Michelle Hanne Soares de Andrade
 
 ## Instruções de utilização
 
