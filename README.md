@@ -1,9 +1,6 @@
 # Projeto-Sangue
 
-Escreva um ou dois parágrafo resumindo o objetivo do seu projeto.
-
-
-Nosso projeto tem como objetivo principal conectar pessoas que possuem interesse em doar sangue à pessoas que precisam de doações. Através de publicações, campanhas e notícias esperamos que o nosso projeto alcançe muitas pessoas e que ajude as pessoas.
+Nosso projeto tem como objetivo principal conectar doadores de sangue a pessoas que necessitam de doações. Através de uma plataforma interativa, pretendemos facilitar o encontro entre quem deseja ajudar e quem precisa de apoio. Além disso, utilizaremos publicações informativas, campanhas de conscientização e notícias relevantes para ampliar o alcance do projeto. Queremos não só mobilizar a comunidade, mas também educar sobre a importância da doação de sangue, incentivando a participação contínua e ajudando a salvar vidas de forma simples e acessível.
 
 ## Alunos integrantes da equipe
 
