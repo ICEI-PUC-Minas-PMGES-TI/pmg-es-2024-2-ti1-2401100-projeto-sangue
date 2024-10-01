@@ -1,0 +1,53 @@
+*Entendimento - Empatia 1*
+A falta de informações sobre doação de sangue, e a baixa taxa de doações edoadores são problemas recorrentes e podem gerar confusão e desentendimentosobre o assunto. Baseado neste aspecto, nosso projeto visa apresentar informações
+corretas ao público e consequentemente incentivá-los a doar sangue e se conectarcom aqueles que precisam de doações.
+Começamos o entendimento de algumas questões que precisávamos para criar uma aplicação Web para doação de sangue.
+A falta de informações, a falta de campanhas, quais eram os públicos alvos para a nossa aplicação, entre outras questões, por isso pesquisamos e incluimos nossas questões na Matriz de Alinhamento.
+Incluimos dúvidas, certezas, suposições e então decidimos quem eram as Pessoas Fundamentais, Importantes e Influenciadoras que precisariamos para a continuidade do projeto.
+
+*Entendimento - Empatia 2*
+Em seguida, fizemos entrevistas qualitativas com pessoas da sociedade sobre informações em geral sobre a doação de sangue. As entrevistas foram feitas com perguntas baseadas no Entendimento da parte 1 que fizemos nossas próprias dúvidas.
+Tivemos entre 15 a 20 retornos da entrevista o qual retiramos as melhores respostas para darmos continuidade em nosso projeto. Exemplos:
+"Você conhece algum requisito necessário para se doar sangue ?, qual seu tipo sanguineo Se sim quais?"
+"Resposta: Sim , requisito de para fazer tatuagem precisa esperar 6 meses para doar sangue. Sim, precisa pesar mais de 50kg. Ter entre 16 e 65 anos , estar descansado, ter boa saúde, estar alimentado só que com comidas leves,não estar grávida ou amamentar, não ter realizado doação de sangue nos últimos 90 dias (mulheres) e 60 dias (homens) e etc."
+"Você Já Viu alguma campanha ou divulgação sobre doação de sangue ? se sim com que frequência ?"
+"Resposta: Raramente Vejo campanhas do assunto, a ultima que me lembro foi a 2 anos Sim, na Puc semestralmente Sim, com pouca frequência. Sim, sempre em cartazes e as vezes ate mesmo na TV"
+Com essas informações e algumas outras conseguimos retirar o que precisavámos para avancar no projeto.
+
+*Entendimento - Definição 3*
+Com base nas perguntas e respostas que tinhamos nós criamos 3 Personas para possíveis pessoas que usariam a nossa aplicação Web.
+Elas foram, o Sergio de Matos Almeida de 60 anos que o objetivo chave de Sergio é poder ajudar os outros, visto que seu filho já
+precisou de doação e isso fez ele conhecer esse mundo, agora é um doador frequente. Ele acha que o serviço é muito necessário para ajudar mais vidas, assim como a do seu filho foi ajudada.
+A Ana Elisa Peixoto Bonfim de 29 anos que tem Uma Irma que esta precisando de doação de sangue, constantemente por ter uma doença crônica.
+ela procura encontrar nesse software uma ajuda e praticidade no encontro de doadores compatíveis e dispostos a ajudar sua irmã.
+E a Maria Aparecida de Oliveira de 35 anos que Maria Aparecida ainda não é doadora, Mas alimenta uma certa curiosidade sobre o assunto, Ela sente falta de conteúdos focados no assunto pelas redes sociais , e por conta disso ainda tem algumas duvidas. Por ser jornalista sabe do perigo e riscos da fake news. por isso
+Tenta sempre buscar informaçoes em orgãos oficiais, porém encontra poucas informações o que a deixa um pé atrás sobre doar sangue.
+
+Criando essas 3 personas nós poderiamos twer uma ideia solida de algumas coisas que seriam necessárias em nossa aplicação.
+
+*Exploração 1*
+Os requisitos que achamos necessários até o momento para a nossa aplicação foram:
+Espaço para publicação de campanha;
+Chat para usuários;
+Implementação de mapa com pontos de coleta de sangue;
+Barra de pesquisa;
+Fórum de discussões;
+Home Page com direcionamento de páginas;
+O site deve permitir favoritar publicações;
+Espaço para comentários;
+Permitir que o usuário verifique os horários das postagens;
+Espaço para que o usuário consulte informações verdadeiras sobre a doação desangue;
+Busca de campanhas de doação;
+Página de consulta de informações;
+Alguns outros requisitos ainda estão sendo pensados e idealizados para colocarmos em nossa aplicação.
+
+*Projeto de Interface*
+Após a decisão de requisitos nós fizemos o nosso User Flow com as páginas que vamos criar, a Home-Page, Campanhas, Doe Sangue, Receba uma Doação, Sobre nós e as ainda não definidas.
+Fizemos então o Wireframes das telas com os itens falados acima. O design foi feito pelo Figma (link do protótipo)https://www.figma.com/proto/sX50viTaWAOpkUKbe8NUuY/Hemo%2B?nodeid=132-69&node-type=canvas&t=HNrdEXbRfLpeSW4p-1&scaling=minzoom&content-scaling=fixed&page-id=0%3A1
+Alguns ajustes serão feitos com o decorrer de tempo e requisitos que queiramos acrescentar sobre, mas até o momento essas foram as nossas telas para a apçicação.
+
+*Metodologia*
+A metodologia empregada durante o desenvolvimento do projeto até o atual
+momento está sendo o Quadro de controle de tarefas – Kanban. Para a divisão de
+tarefas estamos utilizando o aplicativo Trello, que nos permite seguir esse modelo do
+Kanban.
