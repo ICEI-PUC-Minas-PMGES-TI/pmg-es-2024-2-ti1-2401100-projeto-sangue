@@ -2,6 +2,10 @@
     background-color: #E0C7C7;
 }
 
+.cor2 {
+    background-color: #CC9393;
+}
+
 .nav-item {
     background-color: rgba(207, 161, 161, 0.2);
     margin-right: 20px;
@@ -13,10 +17,21 @@
 
 .navbar-nav .nav-link {
     padding: 10px 15px;
-    margin: 5px 0;
     text-align: center;
 }
 
 .navbar-collapse {
     padding: 15px;
+}
+
+.nav-item .active {
+    background-color: #CC9393;
+}
+
+.nav-item:hover {
+    background-color: #ddafaf;
+}
+
+.btn:hover {
+    background-color: #ddafaf;
 }
