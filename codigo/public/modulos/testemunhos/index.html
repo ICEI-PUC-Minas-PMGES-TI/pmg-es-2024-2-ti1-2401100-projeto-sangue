@@ -54,9 +54,33 @@
             <div class="container">
                 <h1 class="mb-4">Testemunhos</h1>
                 <p class="lead">Sua história é importante! Compartilhe sua experiência com a doação de sangue ou como você foi impactado por essa causa. Ao dividir o seu testemunho, você inspira outras pessoas a fazerem parte desse movimento de generosidade e amor ao próximo. Juntos, podemos criar uma rede de apoio e incentivo para que mais vidas sejam salvas. Conte sua experiência e faça parte dessa corrente do bem.</p>
-                <button class="btn mt-3 cor2">Conte sua experiência</button>
+                <button class="btn mt-3 cor2" data-bs-toggle="modal" data-bs-target="#experienceModal">Conte sua experiência</button>
             </div>
         </section>
+
+        <div class="modal fade" id="experienceModal" tabindex="-1" aria-labelledby="experienceModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="experienceModalLabel">Compartilhe sua experiência</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="experienceForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Seu Nome</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="experience" class="form-label">Sua Experiência</label>
+                                <textarea class="form-control" id="experience" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn cor2">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         
         <section class="testimony-section p-3">
             <div class="container">
