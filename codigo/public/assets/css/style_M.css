@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #f2cccc;
+    padding: 20px;
+    position: relative;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 120px;
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    padding: 10px;
+    border-radius: 5px;
+    /* Cor de fundo padrão dos botões */
+    background-color: #AB6B6B;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+/* Cor mais escura para o botão ativo */
+.nav-links li.ativo {
+    background-color: #8a4b4b; /* Cor mais escura do botão ativo */
+}
+
+.nav-links li a:hover {
+    color: #d9534f;
+}
+
+
+/* Seção das ondas */
+.hero {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    background-color: #f2cccc;
+    padding: 50px 0;
+}
+
+.text-center h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.btn-doe {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #AB6B6B;
+    color: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-doe:hover {
+    background-color: #d9534f;
+}
+
+/* Estilo das ondas 
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wave1 {
+    background-color: #f2cccc;
+    clip-path: ellipse(70% 100% at 50% 0%);
+    z-index: 1;
+}
+
+.wave2 {
+    background-color: #D9A3A3;
+    clip-path: ellipse(70% 100% at 50% 0%);
+    height: 120px;
+    z-index: 2;
+    top: 30px;
+    position: relative;
+}
+
+.wave3 {
+    background-color: #AB6B6B;
+    clip-path: ellipse(70% 100% at 50% 0%);
+    height: 90px;
+    z-index: 3;
+    top: 60px;
+    position: relative;
+}
+    */
+
+/* Seção "Porque Doar Sangue?" com imagem e botão */
+.porque-doar {
+    background-color: #D9A3A3;
+    color: #f5f5f5; 
+    text-align: center;
+    padding: 20px 0;
+    width: 100vw; 
+    margin: 0;
+}
+
+.porque-doar h2 {
+    font-size: 24px;
+    color: inherit;
+    font-weight: bold;
+}
+
+.doar-sangue-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.imagem-campanha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagem-campanha img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.btn-campanha {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #AB6B6B;
+    color: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-campanha:hover {
+    background-color: #d9534f;
+}
+
+.texto-motivos {
+    text-align: left;
+    max-width: 400px;
+    color: #991212;
+}
+
+.texto-motivos p {
+    font-weight: bold; /* Deixa o texto em negrito */
+    text-decoration: underline; /* Adiciona o sublinhado */
+}
+
+.cadastro-doador {
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+    text-align: center;
+    color: #991212;
+}
+
+.cadastro-doador h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #991212;
+}
+
+.form-cadastro {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-cadastro label {
+    font-weight: bold;
+    color: #991212;
+    text-align: left;
+}
+
+.form-cadastro input, 
+.form-cadastro select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #AB6B6B;
+    font-size: 16px;
+    color: #333;
+}
+
+.btn-cadastrar {
+    padding: 10px 20px;
+    background-color: #AB6B6B;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cadastrar:hover {
+    background-color: #d9534f;
+}
+
+.form-cadastro label {
+    font-weight: bold;
+    color: #991212;
+    text-align: left;
+}
+
+.form-cadastro input,
+.form-cadastro select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #AB6B6B;
+    font-size: 16px;
+    color: #333;
+    width: 100%;
+}
+
+.form-cadastro input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+.btn-cadastrar {
+    padding: 10px 20px;
+    background-color: #AB6B6B;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cadastrar:hover {
+    background-color: #d9534f;
+}
+
+.mensagem-confirmacao {
+    margin-top: 20px;
+    color: green;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+
+.form-cadastro button {
+    display: block; /* Garante que o botão ocupe 100% da largura */
+    width: 100%;    /* Define a largura do botão */
+    padding: 10px;
+    background-color: #AB6B6B;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none; /* Remove qualquer borda extra */
+    border-radius: 5px;
+}
+
+.form-cadastro button:hover {
+    background-color: #d9534f;
+}
