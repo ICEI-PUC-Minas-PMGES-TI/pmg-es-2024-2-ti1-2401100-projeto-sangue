@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Duvidas</title>
+  <link rel="stylesheet" href="../../assets/css/style_duvidas.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body>
+    <!--<nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="" alt="Logo" height="80" width="160">
+            </a>
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">INÍCIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">DOE SANGUE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">PRECISO DE DOAÇÃO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CAMPANHAS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">DÚVIDAS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">SOBRE NÓS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link search-icon" onclick="toggleSearch()">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <input type="text" class="form-control search-input" placeholder="Pesquisar...">
+                </li>
+            </ul>
+        </div>
+    </nav>-->
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="../../assets/images/logo.png" alt="Logo" height="80" width="160">
+            </a>
+            <!-- Botão de colapso para celular -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menu principal -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">INÍCIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">DOE SANGUE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PRECISO DE DOAÇÃO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CAMPANHAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">DÚVIDAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SOBRE NÓS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link search-icon" onclick="toggleSearch()">
+                            <i class="fas fa-search"></i>
+                        </a>
+                        <input type="text" class="form-control search-input" placeholder="Pesquisar...">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>    
+    <div class="header">
+        <h1>Dúvidas</h1>
+        </div>
+    <div class="faq-section">
+        <h2>Dúvidas Frequentes:</h2>
+        <div class="search-bar">
+            <select class="form-select" id="filterSelect" style="width: 150px;" onchange="applyFilter()">
+                <option value="all">Filtrar</option>
+                <option value="doacao procedimentos">Doação de Sangue e Procedimentos</option>
+                <option value="doacao derivados">Doação de Sangue e Derivados e Medula Óssea</option>
+                <option value="cuidados">Cuidados Pós-Doação</option>
+            </select>              
+            <div style="flex-grow: 1;"></div>
+            <input type="text" id="searchInput" placeholder="Pesquise sua pergunta ou digite uma palavra-chave">
+            <button onclick="searchFAQ()"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Doação de Sangue e Procedimentos</h3>
+            </div>
+            <div class="col-md-8">
+                <div class="faq-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span>Quem pode doar?</span>
+                        <span class="toggle">+</span>
+                    </div>
+                    <div class="answer">Qualquer pessoa com idade entre 16 e 69 anos que pese mais de 50 quilos. Jovens de 16 ou 17 anos precisam de autorização dos pais ou responsáveis.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span>Existem algumas doenças que impedem a doação de sangue?</span>
+                        <span class="toggle">+</span>
+                    </div>
+                    <div class="answer">Sim. Doenças infecciosas, como a gripe, e inflamatórias, como aquelas que atacam o intestino, exigem que a doação seja postergada para outra data. Em caso de dúvida, converse com o profissional de saúde do hemocentro para saber se tudo está ok.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span>Depois de quanto tempo pode doar a pessoa que fez piercing e/ou tatuagem?</span>
+                        <span class="toggle">+</span>
+                    </div>
+                    <div class="answer">A doação pode ser liberada 6 meses após a colocação do piercing e/ou da tatuagem se o procedimento foi realizado em condições adequadas de antissepsia. Para o piercing, se estiver na cavidade oral ou região genital poderá doar sangue após 12 meses da retirada.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span>Depois de quanto tempo pode doar a pessoa que fez acupuntura?</span>
+                        <span class="toggle">+</span>
+                    </div>
+                    <div class="answer">Após 15 dias, desde que o material utilizado seja descartável. Caso contrário, aguardar 12 meses.</div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 40px;">
+            <div class="col-md-4">
+                <h3>Doação de Sangue e Derivados e Medula Óssea</h3>
+            </div>
+            <div class="col-md-8">
+                <div class="faq-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span>Qual o intervalo recomendado para doação de plaquetas? Pode-se doar por tempo indefinido?</span>
+                        <span class="toggle">+</span>
+                    </div>
+                    <div class="answer">O intervalo recomendado entre doações de plaquetas é de, no mínimo, 7 dias, não podendo ultrapassar 24 doações em 12 meses. O organismo repõe as plaquetas rapidamente, em cerca de 48 horas.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span>Qual o tempo que o organismo leva para repor o sangue doado?</span>
+                        <span class="toggle">+</span>
+                    </div>
+                    <div class="answer">O volume líquido é recuperado em cerca de um dia. Os glóbulos vermelhos se recuperam de 2 a 4 semanas após a doação. Os estoques de ferro em cerca de 60 dias nos homens e de 90 dias nas mulheres em idade fértil.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span>Posso aproveitar a doação de sangue e fazer meu cadastro para doar medula óssea?</span>
+                        <span class="toggle">+</span>
+                    </div>
+                    <div class="answer">Sim. É possível aproveitar a coleta de sangue e realizar o cadastro para doar medula óssea. Porém, é muito importante atualizar os dados no Hemocentro em caso de mudança de endereço e telefone pois precisaremos localizá-lo caso haja algum paciente compatível.</div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 40px;">
+            <div class="col-md-4">
+                <h3>Cuidados Pós-Doação</h3>
+            </div>
+            <div class="col-md-8">
+                <div class="faq-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span>E depois de doar sangue? Devo seguir alguma recomendação médica?</span>
+                        <span class="toggle">+</span>
+                    </div>
+                    <div class="answer">Sim. Evite esforços físicos, beba bastante água, não fume por duas horas e evite ingerir álcool pelo resto do dia.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span>Qual o limite de doações de sangue?</span>
+                        <span class="toggle">+</span>
+                    </div>
+                    <div class="answer">Podem ser realizadas até 4 doações de sangue por ano para homens e 3 doações por ano para mulheres.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="question" onclick="toggleAnswer(this)">
+                        <span>Quanto tempo eu tenho que esperar entre uma doação e outra?</span>
+                        <span class="toggle">+</span>
+                    </div>
+                    <div class="answer">Os homens podem visitar o banco de sangue a cada 60 dias. Já as mulheres devem aguardar três meses</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button id="floatButton" onclick="openForm()">💬</button>
+    <div id="formModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeForm()">&times;</span>
+            <h2>Envie sua dúvida</h2>
+            <form id="doubtForm">
+                <label for="userDoubt">Digite sua dúvida:</label>
+                <textarea id="userDoubt" rows="4" required></textarea>
+                <button type="button" onclick="submitDoubt()">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <div>Footer Content 1</div>
+        <div>Footer Content 2</div>
+        <div>Footer Content 3</div>
+    </div>
+
+
+    <script src="../../assets/js/script_duvidas.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-jMuLbZfQLvAFdqD3qXBRmFHH7s9BtvngjAFm51FYmxkmI+kI+tx4yDDk+O3P4y4d" crossorigin="anonymous"></script>
+
+</body>
+</html>
