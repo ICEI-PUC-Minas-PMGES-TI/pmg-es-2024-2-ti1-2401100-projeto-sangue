@@ -1,0 +1,216 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5;
+    color: #5A2D2D;
+}
+.header {
+    width: 100%;
+    height: 400px;
+    overflow: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../images/banner.png'); 
+    background-size: cover;
+    background-position: center; 
+    position: relative;
+}
+.header h1 {
+    position: absolute; 
+    color: #FFFFFF; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    font-size: 2.5em;
+    text-align: center;
+}
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url('img/hamburguer botão.png');
+}
+.navbar {
+    background-color: #F5F5F5;
+    padding: 10px 0;
+}
+.navbar-brand {
+    margin-right: 30px;
+}
+.navbar-nav .nav-link {
+    color: #5A2D2D;
+    margin: 0 10px;
+}
+.navbar-nav .nav-link:hover {
+    color: #F49CBB;
+}
+.search-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+.search-bar input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #F49CBB;
+    border-radius: 5px;
+}
+.search-bar button {
+    background-color: #F49CBB;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.row h3{
+    color: #880D1E;
+    padding: 10px;
+    border-radius: 5px;
+}
+.form-select {
+    border: 2px solid #F49CBB !important; 
+    border-radius: 3px;
+    color: #5A2D2D;
+    padding: 5px;
+    background-color: #F5F5F5; 
+}
+.faq-section { 
+    padding: 20px;
+}
+.faq-section h2 {
+    background-color: #F49CBB;
+    padding: 10px;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+.faq-item {
+    padding: 10px;
+    border-bottom: 1px solid #DD2D4A;
+}
+.faq-item:hover {
+    background-color: #F5F5F5;
+}
+.faq-item .question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.faq-item .answer {
+    display: none;
+    padding: 10px 0;
+    color: #5A2D2D;
+}
+.footer {
+    background-color: #F49CBB;
+    padding: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.search-icon {
+    display: none;
+    cursor: pointer;
+    color: #5A2D2D;
+}
+.search-input {
+    display: none;
+    width: 0;
+    transition: width 0.5s;
+}
+.search-input.active {
+    display: inline-block;
+    width: 200px;
+}
+.faq-item.expanded .answer {
+    display: block;
+}
+.faq-item.expanded {
+    border-bottom: none;
+}
+.faq-item.expanded + .faq-item {
+    border-top: 1px solid #DD2D4A;
+}
+.faq-item + .faq-item {
+    margin-top: 20px;
+}
+#floatButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #CBEEF3;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+#floatButton:hover {
+    transform: scale(1.1);
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close:hover,
+.close:focus {
+    color: #ff4081;
+}
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.modal-content textarea {
+    resize: none;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.modal-content button {
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.modal-content button:hover {
+    background-color: #ff0059;
+}
