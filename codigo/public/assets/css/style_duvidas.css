@@ -130,7 +130,7 @@ body {
 .search-input.active {
     display: inline-block;
     width: 200px;
-    opacity: ;
+    opacity: 1;
 }
 .faq-item.expanded .answer {
     display: block;
