@@ -125,10 +125,12 @@ body {
     display: none;
     width: 0;
     transition: width 0.5s;
+    opacity: 0;
 }
 .search-input.active {
     display: inline-block;
     width: 200px;
+    opacity: ;
 }
 .faq-item.expanded .answer {
     display: block;
