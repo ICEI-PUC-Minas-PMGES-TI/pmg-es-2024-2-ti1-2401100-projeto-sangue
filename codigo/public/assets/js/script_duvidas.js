@@ -1,13 +1,9 @@
 function toggleSearch() {
-    var searchInput = document.querySelector('.search-input');
+    const searchInput = document.querySelector('.search-input');
     if (searchInput.classList.contains('active')) {
         searchInput.classList.remove('active');
-        searchInput.style.width = '0';
-        searchInput.style.display = 'none'; // Adicione isso para esconder
     } else {
         searchInput.classList.add('active');
-        searchInput.style.display = 'inline-block'; // Adicione isso para exibir
-        searchInput.style.width = '200px';
     }
 }
 
