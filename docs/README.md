@@ -20,112 +20,115 @@ Esta seção traz explicações breves sobre o conjunto de artefatos que precisa
 
 ## Problema
 
-Nesse momento você deve apresentar o problema que a sua aplicação deve resolver. No entanto, não é a hora de comentar sobre a aplicação. Descreva também o contexto em que essa aplicação será usada, se houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-**Links Úteis**:
-
-- [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-- [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-- [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+A falta de informações precisas e a baixa taxa de doadores são problemas recorrentes que dificultam o aumento das doações de sangue. Nosso projeto visa fornecer informações corretas e detalhadas, encorajando a doação e conectando potenciais doadores com quem precisa.
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
-
-**Links Úteis**:
-
-- [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+- **Objetivo Geral**: Desenvolver uma aplicação para conectar doadores de sangue a receptores.
+- **Objetivos Específicos**:
+  - Facilitar a busca de campanhas de doação e informações sobre o processo.
+  - Incentivar a doação de sangue por meio de campanhas e histórias de sucesso.
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-**Links Úteis**:
-
-- [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Esse projeto é fundamental para aumentar a conscientização sobre a importância da doação de sangue e para ajudar a conectar doadores a quem precisa de forma mais acessível e eficiente. Foi realizada uma pesquisa com entrevistas qualitativas para fundamentar a importância e o escopo da solução proposta.
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
-
-Adicione informações sobre o público-alvo por meio de uma descrição textual, ou diagramas de personas, mapa de stakeholders, ou como o grupo achar mais conveniente.
-
-**Links Úteis**:
-
-- [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-- [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+- **Pessoas que já são doadoras**: Interessados em encontrar campanhas e locais para doar.
+- **Familiares de pacientes**: Necessitam de uma plataforma para encontrar rapidamente doadores compatíveis.
+- **Interessados em se tornarem doadores**: Precisam de informações confiáveis e incentivo para iniciar.
 
 ## Personas
 
-Relacione as personas identificadas no seu projeto e os respectivos mapas de empatia. Lembre-se que você deve ser enumerar e descrever precisamente e de forma personalizada todos os principais envolvidos com a solução almeja.
+# Personas / Mapas de Empatia
 
-**Links Úteis**:
+## Persona 1: Maria Aparecida de Oliveira
 
-- [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-- [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-- [Rock Content](https://rockcontent.com/blog/personas/)
-- [Criar personas (Hotmart)](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
+**Idade:** 35  
+**Hobby:** Desenhar  
+**Trabalho:** Jornalista  
+**Personalidade:** Criativa, alegre, focada, valoriza a família e os amigos.  
+**Sonhos:** Viajar o mundo, viver da arte e ter um dia uma obra exposta em um museu ou galeria de arte.
 
-## Histórias de Usuários
+### Objetos e Lugares
+**Quais objetos físicos e digitais essa pessoa usa? Quando, onde e como ela os usa?**  
+Maria Aparecida faz uso do Facebook, Instagram e WhatsApp. Ela faz uso dessas plataformas para uso pessoal e profissional, para divulgar suas artes e seu trabalho. Maria, por ser jornalista, está sempre dentro das redes sociais para obter notícias e conteúdo. É uma pessoa conectada.
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
+### Objetivos Chave
+**Quais são os objetivos chave dessa pessoa durante a utilização do serviço? Por que eles precisam desse serviço?**  
+Maria busca uma plataforma onde possa divulgar sua arte e alcançar cada vez mais pessoas, seja por propósito pessoal ou profissional. Como jornalista e artista, deseja que a plataforma permita conexão com seu público e que a arte seja valorizada.
 
-**Links Úteis**:
+### Como Devemos Tratá-la?
+**Como devemos tratá-la para que ela se sinta bem? Quais os tipos de comportamento que deixam essa pessoa feliz?**  
+Essa pessoa gosta de conversar e interagir. Ela gosta de receber elogios sobre suas artes e tem um lado criativo forte.
 
-- [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-- [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
+---
 
-## Requisitos
+## Persona 2: Sergio de Matos Almeida
 
-Os requisitos de um projeto são classificados em dois grupos:
+**Idade:** 60  
+**Hobby:** Pescar  
+**Trabalho:** Empresário  
+**Personalidade:** Amigável, sempre de bom humor, procura ajudar a todos e gosta de viajar.  
+**Sonhos:** Construir uma casa no campo para ter seu descanso e ver seus filhos bem na vida.
 
-- [Requisitos Funcionais (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
-  correspondem a uma funcionalidade que deve estar presente na plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade, desempenho, confiabilidade, segurança ou outro (ex: suporte a dispositivos iOS e Android).
+### Objetos e Lugares
+**Quais objetos físicos e digitais essa pessoa usa? Quando, onde e como ela os usa?**  
+Sergio lê jornais, utiliza do Facebook, Instagram e WhatsApp. Faz uso dessas plataformas para se manter informado e atualizado dos assuntos atuais e utiliza de forma profissional, tudo isso durante seus horários vagos.
 
-Lembre-se que cada requisito deve corresponder à uma e somente uma característica alvo da sua solução. Além disso, certifique-se de que todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+### Objetivos Chave
+**Quais são os objetivos chave dessa pessoa durante a utilização do serviço? Por que eles precisam desse serviço?**  
+O objetivo chave de Sergio é poder ajudar as outras pessoas, visto que seu filho já precisa de doação de ilesão e conhecer esse mundo agora é um doador frequente. Ele acha que o serviço é muito necessário para ajudar mais vidas, assim como a do seu filho foi salva.
 
-**Links Úteis**:
+### Como Devemos Tratá-lo?
+**Como devemos tratá-lo para que ele se sinta bem? Quais os tipos de comportamento que deixam essa pessoa feliz?**  
+Sergio gosta muito de conversar, então uma boa maneira de deixá-lo bem é confortá-lo com um bom papo. Dizer o quanto essas doações ajudam pessoas fazem ele se sentir bem com o que faz, e isso o torna feliz.
 
-- [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-- [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+---
 
-## User Flow
+## Persona 3: Ana Elisa Peixoto Bonfim
 
-Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
+**Idade:** 29  
+**Hobby:** Curly Corner  
+**Trabalho:** Advogada  
+**Personalidade:** Uma pessoa justa, não tolera preconceito, está sempre atenta às causas sociais e acredita que o mundo ainda tem jeito.  
+**Sonhos:** Conquistar o sucesso profissional e se envolver em causas sociais que ajudam o mundo.
 
-**Links Úteis**:
+### Objetos e Lugares
+**Quais objetos físicos e digitais essa pessoa usa? Quando, onde e como ela os usa?**  
+Ana Elisa usa apenas o seu celular. Em seu tempo livre, gosta de ler as notícias do mundo, faz uso do WhatsApp, Instagram, Facebook, Twitter e Reddit, para ficar sempre por dentro do que acontece no mundo.
 
-- [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-- [User Flow vs Site Maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-- [Top 25 User Flow Tools &amp; Templates for Smooth](https://www.mockplus.com/blog/post/user-flow-tools)
+### Objetivos Chave
+**Quais são os objetivos chave dessa pessoa durante a utilização do serviço? Por que eles precisam desse serviço?**  
+Ana tem uma irmã que está precisando de doação de sangue, constantemente por uma doença crônica, ela procura incentivar outras pessoas e propagar a informação de doadores compatíveis e dispostos a ajudar sua irmã.
+
+### Como Devemos Tratá-la?
+**Como devemos tratá-la para que ela se sinta bem? Quais os tipos de comportamento que deixam essa pessoa feliz?**  
+Ana Elisa gosta de ser tratada com respeito, gosta de estimular pessoas a fazerem boas ações. Ela gosta de apresentar suas ideias e pessoas e levá-las às ONGs que ela apoia e ajuda.
+
+
+## Exploração 1
+
+Requisitos identificados até o momento:
+- Publicação de campanhas
+- Chat para usuários
+- Mapa com pontos de coleta de sangue
+- Barra de pesquisa
+- Fórum de discussões
+- Página inicial com direcionamento
+- Favoritar publicações
+- Comentários
+- Informações sobre doação de sangue
+
+## Projeto de Interface
+
+Baseado nos requisitos, o User Flow foi desenhado com as páginas essenciais: Home, Campanhas, Doe Sangue, Receba uma Doação, Sobre Nós, entre outras. Wireframes foram criados no Figma: [Protótipo no Figma](https://www.figma.com/proto/sX50viTaWAOpkUKbe8NUuY/Hemo%2B?nodeid=132-69&node-type=canvas&t=HNrdEXbRfLpeSW4p-1&scaling=minzoom&content-scaling=fixed&page-id=0%3A1)
+
+## Metodologia
+
+A metodologia utilizada foi o Kanban para controle de tarefas, com o Trello como ferramenta de suporte para organizar o fluxo de trabalho.
 
 ## Wireframes
 
-Wireframes são protótipos das telas da aplicação usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante ao layout de elementos fundamentais na interface.
-
-**Links Úteis**:
-
-- [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-- [Figma](https://www.figma.com/)
-- [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-- [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-
-## Gestão de Projetos
-
- Nesta parte do documento, você deve apresentar  o processo de trabalho baseado nas metodologias ágeis, a divisão de papéis e tarefas, as ferramentas empregadas e como foi realizada a gestão de configuração do projeto via GitHub.
-
-Coloque detalhes sobre o processo de Design Thinking e a implementação do Framework Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
-
-**Links Úteis**:
-
-- [Sobre Projects - GitHub Docs](https://docs.github.com/pt/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
-- [Gestão de projetos com GitHub | balta.io](https://balta.io/blog/gestao-de-projetos-com-github)
-- [(460) GitHub Projects - YouTube](https://www.youtube.com/playlist?list=PLiO7XHcmTsldZR93nkTFmmWbCEVF_8F5H)
-- [11 Passos Essenciais para Implantar Scrum no seu Projeto](https://mindmaster.com.br/scrum-11-passos/)
-- [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
+Utilizamos o figma para fazer toda a interface do projeto.
