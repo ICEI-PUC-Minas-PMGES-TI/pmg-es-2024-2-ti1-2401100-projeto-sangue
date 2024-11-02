@@ -1,3 +1,12 @@
+const testemunhos_inicial = [
+    { nome: "Ana Souza", data: "20/07/2024", experiencia: "Foi uma experiência incrível. Senti que estava ajudando alguém em necessidade e a equipe foi muito acolhedora." },
+    { nome: "Lucas Oliveira", data: "16/08/2024", experiencia: "Doar sangue é um ato simples, mas que faz uma grande diferença. Recomendo a todos que façam!" },
+    { nome: "Mariana Lima", data: "23/08/2024", experiencia: "Eu estava nervosa no início, mas a equipe me tranquilizou e foi tudo muito rápido e fácil." },
+    { nome: "Rafael Santos", data: "25/09/2024", experiencia: "A doação é rápida e segura. Fico feliz em saber que posso ajudar a salvar vidas." },
+    { nome: "Juliana Costa", data: "13/10/2024", experiencia: "Eu nunca tinha doado antes, mas agora que fiz, pretendo voltar sempre. É um gesto de amor ao próximo." }
+  ];
+  
+
 document.addEventListener("DOMContentLoaded", function () {
     const formulario = document.getElementById("experienceForm");
     const nomeInput = document.getElementById("name");
@@ -23,13 +32,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     function salvarTestemunho(testemunho) {
-        const testemunhos = JSON.parse(localStorage.getItem("testemunhos")) || [];
-        testemunhos.unshift(testemunho);
+        const testemunhos = JSON.parse(localStorage.getItem("testemunhos")) || testemunhos_inicial;
+        testemunhos.push(testemunho);
         localStorage.setItem("testemunhos", JSON.stringify(testemunhos));
     }
 
     function carregarTestemunhos() {
-        const testemunhos = JSON.parse(localStorage.getItem("testemunhos")) || [];
+        const testemunhos = JSON.parse(localStorage.getItem("testemunhos")) || testemunhos_inicial;
         testemunhos.forEach(exibirTestemunho);
     }
 

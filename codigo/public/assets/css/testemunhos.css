@@ -1,18 +1,18 @@
 .cor1 {
-    background-color: #E0C7C7;
+    background-color: #F49CBB;
 }
 
 .cor2 {
-    background-color: #CC9393;
+    background-color: #F26A8D;
 }
 
 .nav-item {
-    background-color: rgba(207, 161, 161, 0.2);
+    background-color: rgba(242, 106, 141, 0.2);
     margin-right: 20px;
 }
 
 .logo {
-    max-width: 120px;
+    max-width: 150px;
 }
 
 .navbar-nav .nav-link {
@@ -25,13 +25,13 @@
 }
 
 .nav-item .active {
-    background-color: #CC9393;
+    background-color: #e4577a;
 }
 
 .nav-item:hover {
-    background-color: #ddafaf;
+    background-color: #e4577a;
 }
 
 .btn:hover {
-    background-color: #ddafaf;
+    background-color: #e4577a;
 }
