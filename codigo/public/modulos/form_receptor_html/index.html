@@ -2,16 +2,56 @@
 <html lang="pt-BR">
 
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_receptor.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário do Receptor</title>
 </head>
 
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="#">
+                    <img src="../../images/logo.png" alt="Logo" height="80" width="160">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Menu principal -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">INÍCIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">DOE SANGUE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PRECISO DE DOAÇÃO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CAMPANHAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">DÚVIDAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SOBRE NÓS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link search-icon" onclick="toggleSearch()">
+                                <i class="fas fa-search"></i>
+                            </a>
+                            <input type="text" class="form-control search-input" placeholder="Pesquisar...">
+                        </li>
+                    </ul>
+                </div>
+           
+        </nav>    
+    </header>
     <div class="container">
         <div class="form-image">
-            <img src="img/undraw_undraw_undraw_undraw_sign_up_ln1s_-1-_s4bc_-1-_ee41_-1-_kf4d.svg">
+            <img src="../../image/undraw_undraw_undraw_undraw_sign_up_ln1s_-1-_s4bc_-1-_ee41_-1-_kf4d.svg">
         </div>
         <div class="form">
             <form action="#">
@@ -86,13 +126,18 @@
                     </div>
                 </div>
                 <div class="confirm-bottom">
-                    <button type="submit">Confirmar</button>
+                    <button type="submit"><a href="#">Confirmar</a></button>
                 </div>
             </form>
         </div>
     </div>
+    <footer>
+        <div><p>Email: hemo.contato@gmail.com</p></div>
+        <div><p>© 2024 Hemo+.Todos os direitos reservados.</p></div>
+    
+    </footer>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
-    <script src="script.js"></script>
+    <script src="script_receptor.js"></script>
 </body>
 </html>
