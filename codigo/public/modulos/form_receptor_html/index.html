@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link rel="stylesheet" href="style_receptor.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário do Receptor</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="#">
+                    <img src="../../images/logo.png" alt="Logo" height="80" width="160">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Menu principal -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">INÍCIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">DOE SANGUE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PRECISO DE DOAÇÃO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CAMPANHAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">DÚVIDAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SOBRE NÓS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link search-icon" onclick="toggleSearch()">
+                                <i class="fas fa-search"></i>
+                            </a>
+                            <input type="text" class="form-control search-input" placeholder="Pesquisar...">
+                        </li>
+                    </ul>
+                </div>
+           
+        </nav>    
+    </header>
+    <div class="container">
+        <div class="form-image">
+            <img src="../../image/undraw_undraw_undraw_undraw_sign_up_ln1s_-1-_s4bc_-1-_ee41_-1-_kf4d.svg">
+        </div>
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Formulário do Receptor</h1>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="sobrenome">Sobrenome:</label>
+                        <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">Confirme seu email:</label>
+                        <input type="email" id="email" name="confirmar-email" placeholder="Digite seu email" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="idade">Idade:</label>
+                        <input type="number" id="idade" name="idade" placeholder="Digite sua idade" required>
+                    </div>
+                </div>
+                <div class="blood-type">
+                    <div class="blood-title">
+                        <h4>Tipo Sanguíneo</h4>
+                    </div>
+                    <div class="blood">
+                        <div class="blood-box">
+                            <input type="radio" id="a+" name="blood" value="a+">
+                            <label for="a+">A+</label>
+                        </div>
+                        <div class="blood-box">
+                            <input type="radio" id="a-" name="blood" value="a-">
+                            <label for="a-">A-</label>
+                        </div>
+                        <div class="blood-box">
+                            <input type="radio" id="b+" name="blood" value="b+">
+                            <label for="b+">B+</label>
+                        </div>
+                        <div class="blood-box">
+                            <input type="radio" id="b-" name="blood" value="b-">
+                            <label for="b-">B-</label>
+                        </div>
+                        <div class="blood-box">
+                            <input type="radio" id="ab+" name="blood" value="ab+">
+                            <label for="ab+">AB+</label>
+                        </div>
+                        <div class="blood-box">
+                            <input type="radio" id="ab-" name="blood" value="ab-">
+                            <label for="ab-">AB-</label>
+                        </div>
+                        <div class="blood-box">
+                            <input type="radio" id="o+" name="blood" value="o+">
+                            <label for="o+">O+</label>
+                        </div>
+                        <div class="blood-box">
+                            <input type="radio" id="o-" name="blood" value="o-">
+                            <label for="o-">O-</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="confirm-bottom">
+                    <button type="submit"><a href="#">Confirmar</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div><p>Email: hemo.contato@gmail.com</p></div>
+        <div><p>© 2024 Hemo+.Todos os direitos reservados.</p></div>
+    
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+    <script src="script_receptor.js"></script>
+</body>
+</html>
