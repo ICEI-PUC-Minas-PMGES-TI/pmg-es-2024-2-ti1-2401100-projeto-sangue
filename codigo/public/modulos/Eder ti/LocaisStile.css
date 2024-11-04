@@ -1,0 +1,135 @@
+/* Estilos Globais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url('img/banner.png');
+    background-size: cover; 
+    background-position: center;
+    padding: 50px 0;
+}
+
+/* Container Principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Seção Superior */
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    flex-wrap: wrap; /* Para permitir que os elementos quebrem de linha em telas pequenas */
+}
+
+/* Estilos do Mapa */
+.map {
+    flex: 1;
+    background-color: #e0e0e0;
+    height: 300px;
+    margin-right: 1rem;
+}
+
+/* Estilos do Formulário */
+.form-section {
+    flex: 1;
+    background-color: #f8e8e8;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.form-section h2 {
+    background-color: #b07a7a;
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-top: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+input[type="text"] {
+    width: 50%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Seção Inferior com Links de Redes Sociais */
+.bottom-section {
+    background-color: #f8e8e8;
+    padding: 2rem;
+    text-align: center;
+    
+}
+
+.social-link {
+    display: block;
+    color: #b07a7a;
+    text-decoration: none;
+    margin: 0.5rem 0;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.social-link:hover {
+    color: #8a5a5a;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    /* Ajuste da seção superior para telas menores */
+    .top-section {
+        flex-direction: column; /* Faz com que o mapa e o formulário fiquem um acima do outro */
+    }
+
+    .map {
+        margin-right: 0; /* Remove o espaçamento lateral */
+        margin-bottom: 1rem; /* Adiciona espaçamento inferior */
+        height: 200px; /* Diminui a altura do mapa */
+    }
+
+    .form-section {
+        padding: 1rem;
+    }
+
+    /* Ajuste da fonte dos links de redes sociais */
+    .social-link {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustes para telas muito pequenas (celulares em modo retrato) */
+    .container {
+        padding: 1rem;
+    }
+
+    .form-section h2 {
+        font-size: 1rem; /* Ajusta o tamanho do texto do título do formulário */
+    }
+
+    .bottom-section {
+        padding: 1.5rem;
+    }
+}
+
+/* Estilos do Mapa */
+.map {
+    flex: 1;
+    height: 300px;
+    margin-right: 1rem;
+    background-color: lightblue;
+}
+
