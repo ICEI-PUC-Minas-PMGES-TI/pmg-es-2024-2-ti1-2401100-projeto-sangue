@@ -1,79 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Borel&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
+
+/*Geral*/
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
 }
-header {
-    width: 100%;
-    height: 400px;
-    overflow: hidden; 
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    background-size: cover;
-    background-position: center; 
-    position: relative;
 
-}
-header li{
-    display: inline;
-    margin: 0 20px;
-    text-decoration: none;
-}
-header li a{
-    display: inline;
-    margin: 0 20px;
-    text-decoration: none;
-}
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 10%;
-    width: 100%;
-    position: fixed;
-    z-index: 1000;
-}
-.navbar-toggler {
-    border: none;
-}
-
-.navbar-toggler-icon {
-    background-image: url('img/hamburguer botão.png');
-}
-.navbar-brand {
-    margin-right: 30px;
-}
-.navbar-nav .nav-link {
-    color: #5A2D2D;
-    margin: 0 10px;
-}
-.navbar-nav .nav-link:hover {
-    color: #348bc5;
-}
-
-.nav-item input {
-    
-    padding: 10px;
-    border: 1px solid #F49CBB;
-    border-radius: 5px;
-}
-
-footer {
-    background-color: #f49cbb38;
-    padding: 20px;
-    text-align: center;
-    color: #FFFFFF;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-    width: 100%;
-    position: re;
-    bottom: 0;
-}
-body{
+/*Fontes Gerais*/
+body {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -84,27 +20,94 @@ body{
     background-image: linear-gradient(to left, #f7738b 10%, #aed8dd 100%);
     background-size: 400% 100%;
     animation: gradient 5s infinite alternate;
-
 }
+
 @keyframes gradient {
-    0%{
+    0% {
         background-position-x: 0%;
     }
-    100%{
+
+    100% {
         background-position-x: 100%;
     }
 }
 
+/*Header*/
+header {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
 
-.container{
+header li {
+    display: inline;
+    margin: 0 20px;
+    text-decoration: none;
+}
+
+header li a {
+    display: inline;
+    margin: 0 20px;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    margin-right: 30px;
+}
+
+.navbar-nav .nav-link {
+    color: #5A2D2D;
+    background-color: #f7adbb83;
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin: 0 10px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #1b5f8d;
+}
+
+/*Footer*/
+footer {
+    background-color: #f49cbb38;
+    padding: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    width: 100%;
+    bottom: 0;
+}
+
+/*Formulário*/
+.container {
     justify-content: center;
     align-items: center;
     width: 80%;
     height: 80vh;
     display: flex;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+    border-radius: 0 10px 10px 0;
 }
-.form-image{
+
+.form-image {
     width: 50%;
     height: 100%;
     display: flex;
@@ -114,11 +117,12 @@ body{
     padding: 1rem;
     border-radius: 10px 0 0 10px;
 }
-.form-image img{
-    width: 31rem;
 
+.form-image img {
+    width: 31rem;
 }
-.form{
+
+.form {
     width: 50%;
     height: 100%;
     display: flex;
@@ -129,27 +133,12 @@ body{
     background-color: rgb(255, 255, 255);
     border-radius: 0 10px 10px 0;
 }
-.form-header{
+
+.form-header {
     margin-bottom: 3rem;
 }
-.confirm-bottom button {
-    border: none;
-    background-color: #dd2d4a;
-    color: white;
-    padding: 0.4rem 1rem;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-top: 2.5rem;
-    width: 100%;
-}
-.confirm-bottom button a{
-    text-decoration: none;
-    color: white;
-}
-.confirm-bottom button:hover{
-    background-color: #ff4d6d;
-}
-.form-header h1::after { 
+
+.form-header h1::after {
     content: '';
     display: block;
     width: 6rem;
@@ -165,188 +154,271 @@ body{
     flex-wrap: wrap;
     justify-self: space-between;
     padding: 1rem 0;
-    
 }
-.input-box{
+
+.input-box {
     display: flex;
     flex-direction: column;
     margin-bottom: 1.1rem;
-    padding: 0 45px;
+    padding: 0 5px;
 }
-.input-box input{
+
+.input-box input {
     margin: 0.6rem 0;
     padding: 0.8rem 1.2rem;
     border-radius: 10px;
     box-shadow: 1px 1px 6px #0000001c;
 }
-.input-box input:houver{
+
+.input-box input:houver {
     background-color: #eeeeee75;
 }
-.input-box input:focus-visible{
+
+.input-box input:focus-visible {
     outline: 1px solid #dd2d4a;
 }
-.input-box label, .blood-title h4{
+
+.input-box label,
+.blood-title h4 {
     font-size: 0.75rem;
     font-weight: 600;
     color: #000000c0;
 }
-.input-box input::placeholder{
+
+.input-box input::placeholder {
     color: #000000be;
 }
-.blood{
+
+.blood {
     display: flex;
     justify-content: space-between;
     margin-top: 0.62rem;
     padding: 0 0.5rem;
 }
-.blood-box{
+
+.blood-box {
     display: flex;
     align-items: center;
 }
-.blood-box input{
+
+.blood-box input {
     margin-right: 0.35;
 }
-.blood-box label{
+
+.blood-box label {
     font-size: 0.81rem;
     font-weight: 600;
     color: #000000c0;
 }
-@media screen and (mix-width: 1331px){
-    .container{
+
+/*Botão confirmação*/
+.confirm-bottom button {
+    border: none;
+    background-color: #dd2d4a;
+    color: white;
+    padding: 0.4rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 2.5rem;
+    width: 100%;
+}
+
+.confirm-bottom button a {
+    text-decoration: none;
+    color: white;
+}
+
+.confirm-bottom button:hover {
+    background-color: #ff4d6d;
+}
+
+/*Responsividade*/
+@media screen and (mix-width: 1331px) {
+    .container {
         width: 60%;
         height: 70vh;
     }
-    .input-group{
+
+    .input-group {
+        width: 100%;
+    }
+
+    .input-box {
+        display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
-        max-height: 10rem;
-        padding-right: 430rem;
+    }
+
+    .form {
+        width: auto;
+    }
+
+    .navbar-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        justify-items: center;
+        padding-top: 15px;
         width: 100%;
     }
-    .input-box{
-        width: 100%;
+
+}
+
+@media screen and (max-width: 1330px) {
+    .container {
+        width: 70%;
+        height: 75vh;
+        border-radius: 10px;
+        margin-bottom: 50px;
     }
-    .form{
+
+    .form {
         width: 100%;
-    }
-    .nav-item input {
-        display: none;
+        height: auto;
+        border-radius: 10px;
 
     }
-    
-}
-@media screen and (max-width: 1330px){
-    .container{
-        width: 60%;
-        height: 75vh;
-    }
-    .form{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        padding: 1rem;
-        border-radius: 10px;
-    }
-    .form-image{
+
+    .form-image {
         display: none;
     }
-    header{
-        top: 0;
+
+    .navbar-nav {
+        display: none;
     }
-    footer{
-    
+
+    footer {
+        position: relative;
         display: flex;
         flex-wrap: wrap;
         bottom: 0;
+        margin-top: 10px;
     }
 }
-@media screen and (max-width: 1064px){
-    .container{
-        width: 90%;
-        height: auto;
-        
+
+@media screen and (max-width: 1064px) {
+
+    header img {
+        margin-top: 5px;
     }
-  
-    .input-group{
+
+    .navbar-nav {
+        display: none;
+        margin: 0;
+    }
+
+    .container {
+        width: 80%;
+        height: auto;
+        margin: 15px 0px 70px 0px;
+    }
+
+    .form {
+        width: 100%;
+        height: 80vh;
+    }
+
+    .input-group {
         flex-direction: column;
         overflow-y: scroll;
         flex-wrap: nowrap;
         max-height: 10rem;
         padding-right: 5rem;
     }
-    .blood-box{
-        margin-top: 2rem;
 
+    .blood-box {
+        margin-top: 2rem;
     }
-    .blood{
+
+    .blood {
         display: flex;
         flex-wrap: wrap;
         justify-self: space-between;
         padding: 1rem 0;
     }
-    .form{
-        width: 100%;
-        height: 50vh;
-    }
-    .nav-item input {
-        display: none;
-    }
-    nav{
-        width: 100%;
-        padding-top: 15px;
-        top: 0;
-    }
-    footer{
+
+    footer {
         position: fixed;
         display: flex;
         flex-wrap: wrap;
         bottom: 0;
+        margin-top: 5px;
     }
 }
-@media screen and (max-width: 600px){
 
-        .container{
-            width: 95%;
-            height: auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+@media screen and (max-width: 600px) {
+
+    body,
+    html {
+        overflow-x: hidden;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        display: none;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .container {
+        width: 95%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+
+    .form {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 1rem;
+        border-radius: 10px;
+        margin-top: 0;
+    }
+
+    .blood {
+        display: flex;
+        flex-wrap: wrap;
+        justify-self: space-between;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .blood-box {
+        flex: 0 25%;
+    }
+
+    .confirm-bottom button {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    footer {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        bottom: 0;
+
+    }
+
+    @keyframes gradient {
+        0% {
+            background-position-x: 10%;
         }
-        .blood{
-            display: flex;
-            flex-wrap: wrap;
-            justify-self: space-evenly;
-            width: 80%;
-            align-items: center;
+
+        100% {
+            background-position-x: 85%;
         }
-        .blood-box{
-            margin-top: 2rem;
-        }
-        .confirm-bottom button{
-            width: 83%;
-        }
-        .nav-item input {
-            display: none;
-        }
-        #navbarNav{
-            display: none;
-        }
-        header{
-            display: none;
-        }
-        footer{
-            position: fixed;
-            display: flex;
-            flex-wrap: wrap;
-            bottom: 0;
-        }
-        @keyframes gradient {
-            0%{
-                background-position-x: 10%;
-            }
-            100%{
-                background-position-x: 85%;
-            }
-        }
+    }
 }
