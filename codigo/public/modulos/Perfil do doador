@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Usuário</title>
+    <link rel="stylesheet" href="style_M.css">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Lora:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo Doação de Sangue">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">INÍCIO</a></li>
+                <li><a href="#">DOE SANGUE</a></li>
+                <li><a href="#">PRECISO DE DOAÇÃO</a></li>
+                <li><a href="#">CAMPANHAS</a></li>
+                <li><a href="#">DÚVIDAS</a></li>
+                <li><a href="#">SOBRE NÓS</a></li>
+            </ul>
+            <div class="perfil">
+                <a href="perfil.html">
+                    <img src="img/foto_perfil.png" alt="Perfil" class="perfil-icon">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="text-center">
+            <h1>Minhas Informações</h1>
+        </div>
+    </section>
+
+    <section class="perfil-info">
+        <div class="foto-perfil">
+            <img src="img/foto_perfil.png" alt="Foto de Perfil">
+            <input type="file" id="inputFoto" accept="image/*" style="display: none;">
+            <button id="btnAlterarFoto" class="btn-alterar-foto">Alterar Foto</button>
+            <div id="seletorFotos" style="display: none;">
+                <p>Escolha uma nova foto de perfil:</p>
+                <img src="img/foto1.png" alt="Foto 1" class="foto-opcao" onclick="alterarFoto('img/foto1.png')">
+                <img src="img/foto2.png" alt="Foto 2" class="foto-opcao" onclick="alterarFoto('img/foto2.png')">
+                <img src="img/foto3.png" alt="Foto 3" class="foto-opcao" onclick="alterarFoto('img/foto3.png')">
+            </div>
+        </div>
+        <div class="detalhes-perfil">
+            <h2 id="nome-usuario">Nome do Usuário</h2>
+            <p id="idade-usuario">Data de Nascimento:</p>
+            <p id="tipo-sanguineo">Tipo Sanguíneo:</p>
+            <p id="email-usuario">Email:</p>
+            <p id="telefone-usuario">Telefone:</p>
+            <p id="estado-usuario">Estado:</p>
+            <p id="cidade-usuario">Cidade:</p>
+            <p id="onde-conheceu">Onde Conheceu:</p>
+            <p id="sexo-usuario">Sexo:</p>
+            <button id="btnEditar" class="btn-editar">Editar Perfil</button>
+            <button id="btnExcluir" class="btn-excluir">Excluir Perfil</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
