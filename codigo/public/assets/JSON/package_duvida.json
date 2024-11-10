@@ -2,7 +2,7 @@
     "name": "meu-projeto-express",
     "version": "1.0.0",
     "description": "Um projeto básico em Node.js com Express",
-    "main": "server.js",
+    "main": "server_duvida.js",
     "scripts": {
         "start": "node server_duvida.js",
         "dev": "nodemon server.js"
