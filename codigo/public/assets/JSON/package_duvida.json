@@ -4,7 +4,7 @@
     "description": "Um projeto básico em Node.js com Express",
     "main": "server.js",
     "scripts": {
-        "start": "node server.js",
+        "start": "node server_duvida.js",
         "dev": "nodemon server.js"
     },
     "author": "Seu Nome",
