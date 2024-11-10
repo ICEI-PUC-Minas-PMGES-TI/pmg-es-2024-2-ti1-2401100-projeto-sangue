@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil do Usuário</title>
-    <link rel="stylesheet" href="style_M.css">
-    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../assets/css/style_M.css">
+    <link rel="shortcut icon" href="../../assets/images/logo.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Lora:wght@400&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav class="menu">
             <div class="logo">
-                <img src="img/logo.png" alt="Logo Doação de Sangue">
+                <img src="../../assets/images/logo.png" alt="Logo Doação de Sangue">
             </div>
             <ul class="nav-links">
                 <li><a href="#">INÍCIO</a></li>
@@ -23,8 +23,8 @@
                 <li><a href="#">SOBRE NÓS</a></li>
             </ul>
             <div class="perfil">
-                <a href="perfil.html">
-                    <img src="img/foto_perfil.png" alt="Perfil" class="perfil-icon">
+                <a href="../../modulos/perfil_doador/pagina_perfil.html">
+                    <img src="../../assets/images/foto_perfil.png" alt="Perfil" class="perfil-icon">
                 </a>
             </div>
         </nav>
@@ -38,14 +38,14 @@
 
     <section class="perfil-info">
         <div class="foto-perfil">
-            <img src="img/foto_perfil.png" alt="Foto de Perfil">
+            <img src="../../assets/images/foto_perfil.png" alt="Foto de Perfil">
             <input type="file" id="inputFoto" accept="image/*" style="display: none;">
             <button id="btnAlterarFoto" class="btn-alterar-foto">Alterar Foto</button>
             <div id="seletorFotos" style="display: none;">
                 <p>Escolha uma nova foto de perfil:</p>
-                <img src="img/foto1.png" alt="Foto 1" class="foto-opcao" onclick="alterarFoto('img/foto1.png')">
-                <img src="img/foto2.png" alt="Foto 2" class="foto-opcao" onclick="alterarFoto('img/foto2.png')">
-                <img src="img/foto3.png" alt="Foto 3" class="foto-opcao" onclick="alterarFoto('img/foto3.png')">
+                <img src="../../assets/images/foto1.png" alt="Foto 1" class="foto-opcao" onclick="alterarFoto('img/foto1.png')">
+                <img src="../../assets/images/foto2.png" alt="Foto 2" class="foto-opcao" onclick="alterarFoto('img/foto2.png')">
+                <img src="../../assets/images/foto3.png" alt="Foto 3" class="foto-opcao" onclick="alterarFoto('img/foto3.png')">
             </div>
         </div>
         <div class="detalhes-perfil">
@@ -63,6 +63,6 @@
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <script src="../../assets/js/script.js"></script>
 </body>
 </html>
