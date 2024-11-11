@@ -2,9 +2,11 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Torna a página responsiva -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de doador</title>
     <link rel="stylesheet" href="../../assets/css/style_M.css">
+    <link rel="shortcut icon" href="../../assets/images/logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Lora:wght@400&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -14,13 +16,19 @@
                 <img src="../../assets/images/logo.png" alt="Logo Doação de Sangue"> <!-- Logo do site -->
             </div>
             <ul class="nav-links">
-                <li><a href="#">Início</a></li>
-                <li class="ativo"><a href="#">Doe Sangue</a></li>
-                <li><a href="#">Preciso de Doação</a></li>
-                <li><a href="#">Campanhas</a></li>
-                <li><a href="#">Dúvidas</a></li>
-                <li><a href="#">Sobre Nós</a></li>
-            </ul>                     
+                <li><a href="#">INÍCIO</a></li>
+                <li><a href="#">DOE SANGUE</a></li>
+                <li><a href="#">PRECISO DE DOAÇÃO</a></li>
+                <li><a href="#">CAMPANHAS</a></li>
+                <li><a href="#">DÚVIDAS</a></li>
+                <li><a href="#">SOBRE NÓS</a></li>
+            </ul>
+            <div class="perfil">
+                <!-- Link para a página de perfil -->
+                <a href="../../modulos/perfil_doador/pagina_perfil.html">
+                    <img src="../../assets/images/foto_perfil.png" alt="Perfil" class="perfil-icon"> <!-- Ícone do perfil -->
+                </a>
+            </div>                
         </nav>
     </header>
 
@@ -31,25 +39,20 @@
             <h1>Doe sangue e salve vidas.</h1>
             <a href="#cadastroDoador" class="btn-doe">Seja doador</a> <!-- Botão que leva para a seção de cadastro -->
         </div>
-        
-        <!-- Elementos decorativos em forma de onda -->
-        <div class="wave wave1"></div>
-        <div class="wave wave2"></div>
-        <div class="wave wave3"></div>
     </section>
 
     <section class="porque-doar">
         <!-- Seção explicando a importância de doar sangue -->
-        <h2>PORQUE DOAR SANGUE?</h2><br>
+        <h2>POR QUE DOAR SANGUE?</h2><br>
         <div class="doar-sangue-content">
             <div class="imagem-campanha">
                 <img src="../../assets/images/doe_sangue.png" alt="Doe Sangue"> <!-- Imagem com o tema de doação -->
-                <a href="#" class="btn-campanha">Campanhas</a> <!-- Botão para ver campanhas de doação -->
+                <a href="" class="btn-campanha">Campanhas</a> <!-- Botão para ver campanhas de doação -->
             </div>
             <div class="texto-motivos">
                 <!-- Lista de motivos para doar sangue -->
-                <p>1. É seguro, pois todo o material usado no procedimento é esterelizado e descatável, o que reduz qualquer chance de contanimação.</p><br>
-                <p>2.Cada doação ajuda até quatro pessoas.</p><br>
+                <p>1. É seguro, pois todo o material usado no procedimento é esterilizado e descartável, o que reduz qualquer chance de contaminação.</p><br>
+                <p>2. Cada doação ajuda até quatro pessoas.</p><br>
                 <p>3. A doação de sangue não oferece riscos de contaminação.</p><br>
                 <p>4. O sangue doado é restabelecido rapidamente.</p><br>
                 <p>5. O sangue doado é utilizado no tratamento de pessoas com doenças hematológicas variadas, como doença falciforme e talassemia...</p>
@@ -110,15 +113,13 @@
                     <option value="">Selecione</option>
                     <option value="masculino">Masculino</option>
                     <option value="feminino">Feminino</option>
-                    <option value="outro">Outro</option>
                 </select>
-        
+
                 <label>
                     <input type="checkbox" name="newsletter">
                     Desejo receber a newsletter <!-- Checkbox para assinar newsletter -->
                 </label>
-        
-                <button type="button" id="btnCadastrar">Cadastrar</button> <!-- Botão para cadastrar -->
+                <button id="btnCadastrar" class="btn-cadastrar">Cadastrar</button>
             </form>
             <div id="mensagem-confirmacao" class="mensagem-confirmacao"></div> <!-- Div para mensagem de confirmação -->
         </section>
@@ -128,28 +129,24 @@
     <!-- Scripts para manipulação do formulário -->
     <script>
         document.getElementById("formCadastro").addEventListener("submit", function(event) {
-            event.preventDefault(); // Impede o envio do formulário ao servidor
-    
-            // Exibe a mensagem de confirmação
-            document.getElementById("mensagem-confirmacao").textContent = "Cadastro realizado com sucesso!";
-            
-            // Limpa os campos do formulário
-            event.target.reset();
-        });
-    </script>
-
-    <script>
-        document.getElementById("btnCadastrar").addEventListener("click", function(event) {
-            event.preventDefault(); // Impede o envio padrão do formulário
+            event.preventDefault(); // Impede o envio do formulário padrão
     
             // Coleta os dados do formulário
             const formData = {
                 nome: document.getElementById("nome").value,
-                // Colete os valores de outros campos do formulário aqui
+                email: document.getElementById("email").value,
+                telefone: document.getElementById("telefone").value,
+                dataNascimento: document.getElementById("data-nascimento").value,
+                tipoSanguineo: document.getElementById("tipo-sanguineo").value,
+                estado: document.getElementById("estado").value,
+                cidade: document.getElementById("cidade").value,
+                ondeConheceu: document.getElementById("onde-conheceu").value,
+                sexo: document.getElementById("sexo").value,
+                newsletter: document.querySelector("input[name=newsletter]").checked
             };
     
-            // Envia os dados para o servidor
-            fetch("/salvar_doador", {
+            // Envia os dados para o servidor JSON Server (ajuste a URL conforme necessário)
+            fetch("http://localhost:3000/doadores", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -158,18 +155,15 @@
             })
             .then(response => response.json()) // Lida com a resposta do servidor
             .then(data => {
-                if (data.success) {
-                    alert("Cadastro realizado com sucesso!");
-                } else {
-                    alert("Houve um problema no cadastro.");
-                }
+                console.log("Cadastro realizado com sucesso!", data);
+                window.location.href = "pagina_perfil.html"; // Redireciona para a página de perfil
             })
             .catch(error => {
                 console.error("Erro:", error);
-                alert("Erro no servidor.");
+                alert("Erro ao cadastrar. Tente novamente mais tarde.");
             });
         });
-    </script>
-    
+    </script>    
+
 </body>
 </html>
