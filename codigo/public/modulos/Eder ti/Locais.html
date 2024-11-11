@@ -3,49 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/LocaisStile.css">
     <title>Página de Doação</title>
-    <link rel="stylesheet" href="LocaisStile.css">
-    <!-- Script da API do Google Maps -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEMBZydnWXAhGTtcUa2DuaAyk6AjE67EI&callback=initMap" async defer></script>
-    <script>
-        // Função de inicialização do mapa
-        function initMap() {
-            const mapOptions = {
-                center: {lat: -19.92229860562907, lng: -43.9249847432524}, // Coordenadas para São Paulo, por exemplo
-                zoom: 17
-            };
-            const map = new google.maps.Map(document.getElementById("map"), mapOptions);
-        }
-    </script>
 </head>
 <body>
-
     <div class="container">
-        <!-- Seção Superior -->
-        <div class="top-section">
-            <!-- Mapa -->
-            <div id="map" class="map">
-                <!-- O mapa será exibido aqui -->
-            </div>
-
-            <!-- Formulário -->
-            <div class="form-section">
+        <div class="topo">
+            <div id="map" class="map"></div>
+            <div class="formulario">
                 <h2>Laboratórios para realizar a doação</h2>
-                <div class="form-group">
+                <div class="grupo">
                     <label for="cep">CEP:</label>
                     <input type="text" id="cep" name="cep" placeholder="Digite o CEP">
+                    <button>
+                        <i class="fa-solid fa-location-dot"></i>
+                    </button>
                 </div>
-                <!-- Adicione mais campos conforme necessário -->
             </div>
         </div>
-
-        <!-- Seção Inferior com Links de Redes Sociais -->
-        <div class="bottom-section">
-            <a href="#" class="social-link">Facebook</a>
-            <a href="#" class="social-link">Instagram</a>
-            <a href="#" class="social-link">Twitter</a>
-        </div>
     </div>
+    
+    <footer>
+        <div id="footer_social">
+            <a href="https://www.instagram.com/ederjairr3/" target="_blank" class="footer-link" id="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
 
+            <a href="https://github.com/ToshiroHytsugaia" target="_blank" class="footer-link" id="Github">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://www.youtube.com/@toshiroherdeirodeaico3707" target="_blank" class="footer-link" id="Youtube">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </div>
+
+        <div>
+            <p>Email: hemo.contato@gmail.com</p>
+        </div>
+        <div>
+            <p>© 2024 Hemo+. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEMBZydnWXAhGTtcUa2DuaAyk6AjE67EI&callback=initMap" async defer></script>
+    <script src="/Mapa.js" defer></script>
 </body>
 </html>

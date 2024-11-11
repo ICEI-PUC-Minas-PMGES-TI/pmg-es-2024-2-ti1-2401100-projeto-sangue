@@ -79,11 +79,26 @@ function submitDoubt() {
         alert("Por favor, digite sua dúvida.");
         return;
     }
-    
-    alert("Dúvida enviada com sucesso!");
-
-    document.getElementById('userDoubt').value = '';
-    closeForm();
+    fetch('http://localhost:3000/submit-doubt', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ doubt: userDoubt })
+    })
+    .then(response => {
+        if (response.ok) {
+            alert("Dúvida enviada com sucesso!");
+            document.getElementById('userDoubt').value = '';
+            closeForm();
+        } else {
+            alert("Erro ao enviar dúvida.");
+        }
+    })
+    .catch(error => {
+        console.error("Erro:", error);
+        alert("Erro ao enviar dúvida.");
+    });
 }
 
 window.onclick = function(event) {
