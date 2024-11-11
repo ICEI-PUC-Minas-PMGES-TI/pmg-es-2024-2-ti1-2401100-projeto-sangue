@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Campanhas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-pink-200">
+    <header class="bg-pink-300 p-4 flex justify-between items-center">
+        <div class="flex items-center">
+            <img src="img/Logo Hemo.png" alt="Logo do site" class="h-10 w-15 mr-2">
+            <div class="text-2xl font-bold">Logo</div>
+        </div>
+        <nav class="space-x-4">
+            <a href="#" class="text-black">INÍCIO</a>
+            <a href="#" class="text-black">DOE SANGUE</a>
+            <a href="#" class="text-black">PRECISO DE DOAÇÃO</a>
+            <a href="#" class="text-black">CAMPANHAS</a>
+            <a href="#" class="text-black">DÚVIDAS</a>
+            <a href="#" class="text-black">SOBRE NÓS</a>
+        </nav>
+        <div class="relative">
+            <input type="text" class="bg-pink-100 p-2 rounded" placeholder="Search">
+            <i class="fas fa-search absolute right-2 top-2 text-gray-500"></i>
+        </div>
+    </header>
+    <main class="p-8">
+        <h1 class="text-center text-2xl mb-8">Campanhas</h1>
+        <section class="flex justify-between items-center mb-8">
+            <div class="text-3xl font-bold">Faça parte de uma história</div>
+            <button onclick="showCampaigns()" class="bg-pink-500 text-white p-2 rounded">Ver Campanhas Cadastradas</button>
+        </section>
+
+        <div class="mb-8">
+            <button onclick="openModal()" class="bg-pink-500 text-white p-2 rounded">Criar Campanha</button>
+        </div>
+
+        <section id="campaignsSection" class="grid grid-cols-2 gap-8 mb-8">
+            <!-- Campanhas criadas serão exibidas aqui -->
+        </section>
+
+        <footer class="bg-pink-300 p-4">
+            <div class="flex justify-between items-center mb-4">
+                <div class="bg-pink-400 h-8 w-32"></div>
+                <div class="flex space-x-2">
+                    <div class="bg-pink-400 h-8 w-8"></div>
+                    <div class="bg-pink-400 h-8 w-8"></div>
+                    <div class="bg-pink-400 h-8 w-8"></div>
+                </div>
+            </div>
+            <div class="space-y-2">
+                <div class="bg-pink-400 h-4 w-48"></div>
+                <div class="bg-pink-400 h-4 w-40"></div>
+                <div class="bg-pink-400 h-4 w-32"></div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Modal para o formulário de cadastro de campanha -->
+    <div id="donationModal" class="hidden fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 flex items-center justify-center">
+        <div id="donationModalContent" class="bg-white p-6 rounded-lg w-3/4 max-w-4xl overflow-auto">
+            <h2 class="text-xl font-bold mb-4">Cadastro de Campanha</h2>
+            <form id="campaignForm" onsubmit="submitCampaign(event)">
+                <label class="block mb-2">Nome</label>
+                <input type="text" id="campaignName" class="border border-gray-300 p-2 mb-4 w-full" placeholder="Nome" required>
+                
+                <label class="block mb-2">Conte sua história</label>
+                <textarea id="campaignDescription" class="border border-gray-300 p-2 mb-4 w-full" placeholder="Breve descrição da sua história" required></textarea>
+
+                <label class="block mb-2">Tipo Sanguíneo</label>
+                <input type="text" id="bloodType" class="border border-gray-300 p-2 mb-4 w-full" placeholder="Ex: O+, A-, etc." required>
+
+                <label class="block mb-2">Contato (Telefone ou E-mail)</label>
+                <input type="text" id="contactInfo" class="border border-gray-300 p-2 mb-4 w-full" placeholder="Telefone ou E-mail" required>
+
+                <label class="block mb-2">Idade</label>
+                <input type="number" id="age" class="border border-gray-300 p-2 mb-4 w-full" placeholder="Idade" required>
+
+                <label class="block mb-2">Cidade</label>
+                <input type="text" id="city" class="border border-gray-300 p-2 mb-4 w-full" placeholder="Cidade" required>
+
+                <label class="block mb-2">Sexo</label>
+                <select id="gender" class="border border-gray-300 p-2 mb-4 w-full" required>
+                    <option value="">Selecione</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                    <option value="Outro">Outro</option>
+                </select>
+
+                <label class="block mb-2">Foto para a Campanha</label>
+                <input type="file" id="campaignImage" class="border border-gray-300 p-2 mb-4 w-full" accept="image/*" required>
+
+                <button type="submit" class="bg-pink-500 text-white p-2 rounded">Salvar</button>
+                <button type="button" onclick="closeModal()" class="bg-gray-300 text-black p-2 rounded ml-2">Cancelar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal para exibição das campanhas -->
+    <div id="campaignModal" class="hidden fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 flex items-center justify-center">
+        <div class="bg-white p-6 rounded-lg w-3/4 max-w-4xl overflow-auto">
+            <h2 class="text-2xl font-bold mb-4">Campanhas Cadastradas</h2>
+            <div id="campaignList"></div>
+            <button onclick="closeCampaignModal()" class="bg-pink-500 text-white p-2 rounded mt-4">Fechar</button>
+        </div>
+    </div>
+
+    <script>
+        function openModal() {
+            document.getElementById('donationModal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('donationModal').classList.add('hidden');
+        }
+
+        async function submitCampaign(event) {
+            event.preventDefault(); // Impede o comportamento padrão do botão de envio
+
+            const name = document.getElementById('campaignName').value.trim();
+            const description = document.getElementById('campaignDescription').value.trim();
+            const bloodType = document.getElementById('bloodType').value.trim();
+            const contactInfo = document.getElementById('contactInfo').value.trim();
+            const age = document.getElementById('age').value.trim();
+            const city = document.getElementById('city').value.trim();
+            const gender = document.getElementById('gender').value;
+            const imageFile = document.getElementById('campaignImage').files[0];
+
+            if (!name || !description || !bloodType || !contactInfo || !age || !city || !gender || !imageFile) {
+                alert("Por favor, preencha todos os campos.");
+                return;
+            }
+
+            try {
+                const reader = new FileReader();
+                reader.onload = async function (e) {
+                    const imageUrl = e.target.result;
+
+                    const campaignData = {
+                        name,
+                        description,
+                        bloodType,
+                        contactInfo,
+                        age: parseInt(age, 10),
+                        city,
+                        gender,
+                        imageUrl
+                    };
+
+                    const response = await fetch('http://localhost:3000/campaigns', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(campaignData)
+                    });
+
+                    if (response.ok) {
+                        const data = await response.json();
+                        alert("Campanha cadastrada com sucesso!");
+                        addCampaignToSection(data);
+                        closeModal();
+                    } else {
+                        throw new Error(`Erro ao salvar a campanha. Status: ${response.status}`);
+                    }
+                };
+                reader.readAsDataURL(imageFile);
+
+            } catch (error) {
+                console.error('Erro ao salvar a campanha:', error);
+                alert(`Houve um problema ao salvar a campanha: ${error.message}`);
+            }
+
+            document.getElementById('campaignForm').reset();
+        }
+
+        function addCampaignToSection(campaignData) {
+            const campaignsSection = document.getElementById('campaignsSection');
+            const campaignDiv = document.createElement('div');
+            campaignDiv.className = 'bg-pink-400 p-4 rounded shadow';
+
+            campaignDiv.innerHTML = `
+                <img src="${campaignData.imageUrl}" alt="Imagem da campanha" class="w-full h-32 object-cover rounded mb-2">
+                <h3 class="text-xl font-bold mb-2">${campaignData.name}</h3>
+                <p class="mb-2">${campaignData.description}</p>
+                <p class="text-sm text-gray-700">Tipo Sanguíneo: ${campaignData.bloodType}</p>
+                <p class="text-sm text-gray-700">Contato: ${campaignData.contactInfo}</p>
+                <p class="text-sm text-gray-700">Idade: ${campaignData.age}</p>
+                <p class="text-sm text-gray-700">Cidade: ${campaignData.city}</p>
+                <p class="text-sm text-gray-700">Sexo: ${campaignData.gender}</p>
+            `;
+
+            campaignsSection.appendChild(campaignDiv);
+        }
+
+        function showCampaigns() {
+            document.getElementById('campaignModal').classList.remove('hidden');
+
+            fetch('http://localhost:3000/campaigns')
+                .then(response => {
+                    if (response.ok) {
+                        return response.json();
+                    } else {
+                        throw new Error('Erro ao buscar campanhas.');
+                    }
+                })
+                .then(data => {
+                    const campaignList = document.getElementById('campaignList');
+                    campaignList.innerHTML = '';
+
+                    data.forEach(campaign => {
+                        const campaignDiv = document.createElement('div');
+                        campaignDiv.className = 'bg-gray-200 p-4 mb-2 rounded shadow';
+
+                        campaignDiv.innerHTML = `
+                            <img src="${campaign.imageUrl}" alt="Imagem da campanha" class="w-full h-32 object-cover rounded mb-2">
+                            <h3 class="text-xl font-bold mb-2">${campaign.name}</h3>
+                            <p class="mb-2">${campaign.description}</p>
+                            <p class="text-sm text-gray-700">Tipo Sanguíneo: ${campaign.bloodType}</p>
+                            <p class="text-sm text-gray-700">Contato: ${campaign.contactInfo}</p>
+                            <p class="text-sm text-gray-700">Idade: ${campaign.age}</p>
+                            <p class="text-sm text-gray-700">Cidade: ${campaign.city}</p>
+                            <p class="text-sm text-gray-700">Sexo: ${campaign.gender}</p>
+                        `;
+
+                        campaignList.appendChild(campaignDiv);
+                    });
+                })
+                .catch(error => {
+                    console.error('Erro ao carregar campanhas:', error);
+                    alert('Houve um problema ao carregar as campanhas. Verifique a conexão com o servidor.');
+                });
+        }
+
+        function closeCampaignModal() {
+            document.getElementById('campaignModal').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
