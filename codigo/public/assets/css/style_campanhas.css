@@ -22,3 +22,12 @@ body {
 input[type="checkbox"]:checked + .modal {
     display: flex;
 }
+.carousel-items { 
+    width: 400%;
+}
+.carousel-items > div {
+    width: 25%;
+}
+.modal:target {
+    display: flex;
+}

@@ -9,10 +9,10 @@
         }
     </style>
 </head>
-<body class="bg-pink-200">
-    <header class="bg-pink-300 p-4 flex justify-between items-center">
+<body class="bg-[#F26A8D]">
+    <header class="bg-[#E14771] p-4 flex justify-between items-center">
+        <div class="text-2xl font-bold"><img src="Logo Hemo.png" alt="Logo" class="h-20 w-auto"></div>
         <nav class="space-x-4">
-        <div class="text-2xl font-bold"><img src="../../assets/images/logo.png" alt="Logo" class="h-20 w-auto"></div>
             <a href="#" class="text-black">INÍCIO</a>
             <a href="#" class="text-black">DOE SANGUE</a>
             <a href="#" class="text-black">PRECISO DE DOAÇÃO</a>
@@ -31,7 +31,7 @@
         </div>
 
         <div class="text-center">
-            <h1 class="text-3xl font-bold mb-4 text-pink-600">Título da Campanha</h1>
+            <h1 class="text-3xl font-bold mb-4 text-[#E14771]">Título da Campanha</h1>
             <p class="text-lg text-gray-700 max-w-2xl">
                 Esta campanha é dedicada a salvar vidas por meio de doações de sangue. 
                 Ao participar, você ajuda pessoas em situações de emergência e contribui 
@@ -40,5 +40,69 @@
             </p>
         </div>
     </main>
+
+    <div id="modal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
+        <div class="bg-[#F49CBB] p-6 rounded-lg w-2/3 h-2/3 relative opacity-90">
+            <h2 id="modalTitle" class="text-3xl font-bold mb-4"></h2>
+            <p id="modalContent" class="mb-4 text-lg"></p>
+            <button id="closeModal" class="absolute top-4 right-4 text-[#E14771] font-bold text-lg">Fechar</button>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById('modal');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalContent = document.getElementById('modalContent');
+        const closeModal = document.getElementById('closeModal');
+        let currentLink = ''; 
+        const campaigns = {
+            modal1: {
+                title: "Detalhes da Campanha 1",
+                content: "Aqui estão os detalhes sobre a Campanha 1. Você pode incluir informações específicas sobre a campanha, objetivos, locais, etc.",
+                link: "campanha1.html"
+            },
+            modal2: {
+                title: "Detalhes da Campanha 2",
+                content: "Aqui estão os detalhes sobre a Campanha 2. Você pode incluir informações específicas sobre a campanha, objetivos, locais, etc.",
+                link: "campanha2.html"
+            },
+            modal3: {
+                title: "Detalhes da Campanha 3",
+                content: "Aqui estão os detalhes sobre a Campanha 3. Você pode incluir informações específicas sobre a campanha, objetivos, locais, etc.",
+                link: "campanha3.html"
+            },
+            modal4: {
+                title: "Detalhes da Campanha 4",
+                content: "Aqui estão os detalhes sobre a Campanha 4. Você pode incluir informações específicas sobre a campanha, objetivos, locais, etc.",
+                link: "campanha4.html"
+            }
+        };
+
+        document.querySelectorAll('[data-modal]').forEach(item => {
+            item.addEventListener('click', (e) => {
+                const modalId = e.currentTarget.getAttribute('data-modal');
+                showPopup(modalId);
+            });
+        });
+
+        closeModal.addEventListener('click', (e) => {
+            e.stopPropagation();
+            modal.classList.add('hidden');
+        });
+
+        modal.addEventListener('click', () => {
+            if (currentLink) {
+                window.location.href = currentLink;
+            }
+        });
+
+        function showPopup(modalId) {
+            const campaign = campaigns[modalId];
+            modalTitle.textContent = campaign.title;
+            modalContent.textContent = campaign.content;
+            currentLink = campaign.link; 
+            modal.classList.remove('hidden');
+        }
+    </script>
 </body>
 </html>

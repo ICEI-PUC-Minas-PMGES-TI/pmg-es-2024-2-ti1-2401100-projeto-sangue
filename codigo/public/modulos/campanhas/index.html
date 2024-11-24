@@ -1,13 +1,16 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Doação de Sangue</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-pink-200">
-    <header class="bg-pink-300 p-4 flex justify-between items-center">
-        <div class="text-2xl font-bold"><img src="../../assets/images/logo.png" alt="Logo" class="h-20 w-auto"></div>
+<body class="bg-[#F26A8D]">
+    <header class="bg-[#E14771] p-4 flex justify-between items-center">
+        <div class="text-2xl font-bold"><img src="Logo Hemo.png" alt="Logo" class="h-20 w-auto"></div>
         <nav class="space-x-4">
             <a href="#" class="text-black">INÍCIO</a>
             <a href="#" class="text-black">DOE SANGUE</a>
@@ -21,29 +24,38 @@
             <i class="fas fa-search absolute right-2 top-2 text-gray-500"></i>
         </div>
     </header>
+
     <main class="p-8">
         <h1 class="text-center text-2xl mb-8">Campanhas</h1>
+
         <section class="grid grid-cols-2 gap-8 mb-8">
-            <!-- Primeiro quadrado da campanha -->
-            <a href="campanha1.html" target="_blank" class="bg-pink-400 h-48 flex items-center justify-center cursor-pointer">
-                <span class="text-white font-bold">Campanha 1</span>
-            </a>
-            
-            <!-- Segundo quadrado da campanha -->
-            <a href="campanha2.html" target="_blank" class="bg-pink-400 h-48 flex items-center justify-center cursor-pointer">
-                <span class="text-white font-bold">Campanha 2</span>
-            </a>
-
-            <!-- Terceiro quadrado da campanha -->
-            <a href="campanha3.html" target="_blank" class="bg-pink-400 h-48 flex items-center justify-center cursor-pointer">
-                <span class="text-white font-bold">Campanha 3</span>
-            </a>
-
-            <!-- Quarto quadrado da campanha -->
-            <a href="campanha4.html" target="_blank" class="bg-pink-400 h-48 flex items-center justify-center cursor-pointer">
-                <span class="text-white font-bold">Campanha 4</span>
-            </a>
+            <div class="bg-[#F49CBB] h-48 flex items-center justify-center cursor-pointer" data-modal="modal1">
+                <img src="imagem1.jpg" alt="Campanha 1" class="h-full w-full object-cover rounded">
+                <span class="text-white font-bold absolute">Campanha 1</span>
+            </div>
+            <div class="bg-[#F49CBB] h-48 flex items-center justify-center cursor-pointer" data-modal="modal2">
+                <img src="imagem2.jpg" alt="Campanha 2" class="h-full w-full object-cover rounded">
+                <span class="text-white font-bold absolute">Campanha 2</span>
+            </div>
+            <div class="bg-[#F49CBB] h-48 flex items-center justify-center cursor-pointer" data-modal="modal3">
+                <img src="imagem3.jpg" alt="Campanha 3" class="h-full w-full object-cover rounded">
+                <span class="text-white font-bold absolute">Campanha 3</span>
+            </div>
+            <div class="bg-[#F49CBB] h-48 flex items-center justify-center cursor-pointer" data-modal="modal4">
+                <img src="imagem4.jpg" alt="Campanha 4" class="h-full w-full object-cover rounded">
+                <span class="text-white font-bold absolute">Campanha 4</span>
+            </div>
         </section>
     </main>
+
+    <div id="modal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
+        <div class="bg-[#F49CBB] p-6 rounded-lg w-2/3 h-2/3 relative opacity-90">
+            <h2 id="modalTitle" class="text-3xl font-bold mb-4"></h2>
+            <p id="modalContent" class="mb-4 text-lg"></p>
+            <button id="closeModal" class="absolute top-4 right-4 text-[#E14771] font-bold text-lg">Fechar</button>
+        </div>
+    </div>
+
+    <script src="bernardo.js"></script>
 </body>
 </html>
