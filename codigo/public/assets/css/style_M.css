@@ -102,8 +102,9 @@ header {
 .btn-cadastrar {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #DD2D4A !important;
-    color: #fff !important;
+    background-color: #DD2D4A;
+    color: #fff;
+    border: none;
     border-radius: 30px;
     text-decoration: none;
     font-weight: bold;
@@ -410,4 +411,143 @@ p, li {
 
 .foto-perfil button:hover {
     background-color: #5a6268; /* Cinza mais escuro */
+}
+
+/* Responsividade para Tablets */
+@media (max-width: 768px) {
+    .menu {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero {
+        padding: 30px 0;
+    }
+
+    .text-center h1 {
+        font-size: 28px;
+    }
+
+    .btn-doe {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .doar-sangue-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .imagem-campanha img {
+        max-width: 80%;
+    }
+
+    .texto-motivos {
+        max-width: 90%;
+    }
+
+    .form-cadastro {
+        max-width: 90%;
+        gap: 10px;
+    }
+}
+
+/* Responsividade para Smartphones */
+@media (max-width: 480px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logo img {
+        width: 120px;
+        height: auto;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .perfil-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .hero {
+        padding: 20px 0;
+        background-position: top;
+    }
+
+    .text-center h1 {
+        font-size: 20px;
+    }
+
+    .btn-doe {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    .porque-doar h2 {
+        font-size: 18px;
+    }
+
+    .doar-sangue-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .imagem-campanha img {
+        max-width: 100%;
+    }
+
+    .texto-motivos {
+        max-width: 100%;
+    }
+
+    .form-cadastro {
+        max-width: 100%;
+        gap: 8px;
+    }
+
+    .form-cadastro input, .form-cadastro select {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .btn-cadastrar {
+        padding: 8px 14px;
+        font-size: 14px;
+    }
+
+    .detalhes-perfil p {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+
+    .btn-editar, .btn-excluir {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+/* Estilo do formulário na index.html */
+#formCadastroIndex label {
+    color: #880D1E; 
+    font-size: 16px;
+    font-weight: bold;
+}
+/* Estilo do formulário na pagina_perfil.html */
+#formCadastroPerfil label {
+    color: #FFFFFF; 
+    font-size: 16px;
+    font-weight: bold;
 }
