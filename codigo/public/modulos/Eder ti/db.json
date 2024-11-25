@@ -1,0 +1,8 @@
+{
+    "locais": [
+      { "id": 1, "lat": -19.92229860562907, "lng": -43.9249847432524, "nome": "Laboratório Central" },
+      { "id": 2, "lat": -19.92457622100608, "lng": -43.93170197549214, "nome": "Posto de Coleta 1" },
+      { "id": 3, "lat": -19.925100, "lng": -43.920400, "nome": "Posto de Coleta 2" }
+    ]
+  }
+  
