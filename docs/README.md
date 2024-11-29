@@ -1,134 +1,385 @@
-# Documentação do Projeto (TIDocs)
+# 1.Documentação do Projeto (TIDocs)
+![image](https://github.com/user-attachments/assets/a852fd6c-431f-4c61-bb27-31e5aa6ddeb6)
+# HEMO+: Conectando Doadores e Receptores de Sangue
 
-Esta pasta armazena a documentação do projeto para a disciplina de **Trabalho Interdisciplinar 1** dos cursos de Tecnologia da Informação da **[PUC Minas](https://pucminas.br)**. Essa documentação é estruturada na forma de um site que fica disponível por meio do GitHub Pages e pode ser incluído, também, no site da solução hospedada. Um [exemplo publicado do TIDocs](https://webtech-puc-minas.github.io/ti1-template/) está disponível por meio do repositório do **[WebTech PUC Minas](https://github.com/webtech-pucminas)**.
+# Subtítulo
+Uma Solução Digital para Facilitar e Incentivar a Doação de Sangue.
 
-A documentação do projeto inclui as seguintes seções:
+# Informações da Instituição
+ - Universidade: PUC Minas.
+ - Curso: Engenharia de Software.
+ - Disciplina: Trabalho Interdisciplinar de Aplicação Web 1 (TIAW1).
+ - Professores Orientadores: Diego Augusto de Faria Barros, João Paulo Carneiro Aramuni, Michelle Hanne Soares de Andrade.
 
-1. Introdução
-2. Contexto
-3. Concepção
-4. Metodologia
-5. Solução
-6. FAQ (Questões frequentes)
-7. Referências Bibliográficas
+# Equipe de Desenvolvimento
+ - Código da Equipe: T1-G2
+  -Integrantes do Grupo:
+   - Bernardo Carvalho Denucci: Campanha de Doação;
+   - Éder Jair Andrade: Sobre Nós, Mapa de Unidades Próximas;
+   - Kayke Emanoel de Souza Santos: Experiências e Testemunhos;
+   - Lucas Fonseca Martins: Campanha de Doação;
+   - Mariana Fonseca Reis Tavares: Busca por Palavras-chave, Cadastro de Dúvidas;
+   - Marina Silva Diniz: Cadastro de Receptores, Perfil de Receptores;
+   - Matheus Cordeiro Berto: Cadastro do Doador, Perfil do Doador;
 
-O template para o site é estruturado e permite que a equipe evolua a documentação do projeto à medida que avance no desenvolvimento.
+# Data de Entrega
+ Dezembro de 2024.
+# Elementos Visuais
+![logo](https://github.com/user-attachments/assets/d9199459-0ca5-4cc5-958c-45accb40e8d6)
 
-# Orientações gerais
+# 2.Introdução
+- Contextualização
+  
+ A doação de sangue é um ato vital que salva milhões de vidas todos os anos. No entanto, diversas barreiras dificultam o processo, como a falta de informações claras sobre onde e como doar, desafios logísticos enfrentados pelos bancos de sangue e a necessidade constante de doadores regulares. Além disso, muitos potenciais doadores desconhecem os requisitos básicos para doação e as campanhas disponíveis, o que impacta negativamente os estoques de sangue nos hemocentros.
+ [Matriz de alinhamento e mapa de stakeholders.pdf](https://github.com/user-attachments/files/17959692/Matriz.de.alinhamento.e.mapa.de.stakeholders.pdf)
+[Entrevista qualitativa e highlights de pesquisa.pdf](https://github.com/user-attachments/files/17959718/Entrevista.qualitativa.e.highlights.de.pesquisa.pdf)
 
-Esta seção traz explicações breves sobre o conjunto de artefatos que precisam ser incluídos na documentação do projeto com uma conjunto de links importantes para que se entenda como criar cada coisa. 
+ De acordo com as entrevistas qualitativas realizadas, os principais motivos que levam as pessoas a doar sangue são a possibilidade de salvar vidas e ajudar quem precisa, enquanto os bancos de sangue enfrentam dificuldades para manter estoques regulares devido à baixa frequência de doadores​(Entrevista qualitativa …). Esse cenário reforça a necessidade de uma plataforma que conecte doadores, receptores e campanhas de forma simples e acessível.
+ 
+# Objetivo Geral
+Desenvolver uma plataforma digital intuitiva e eficiente que conecte doadores e receptores de sangue, facilitando o acesso a informações relevantes, campanhas de doação e locais próximos para coleta.
+# Objetivos Específicos
+Criar uma plataforma para cadastro de doadores e receptores, garantindo segurança e privacidade dos dados.
 
-## Problema
+Disponibilizar informações claras e acessíveis sobre os requisitos e benefícios da doação de sangue.
 
-A falta de informações precisas e a baixa taxa de doadores são problemas recorrentes que dificultam o aumento das doações de sangue. Nosso projeto visa fornecer informações corretas e detalhadas, encorajando a doação e conectando potenciais doadores com quem precisa.
+Fornecer um mapa interativo que localize hemocentros e eventos de doação próximos.
 
-## Objetivos
+Incentivar a doação de sangue por meio de histórias inspiradoras e personalizadas.
 
-- **Objetivo Geral**: Desenvolver uma aplicação para conectar doadores de sangue a receptores.
-- **Objetivos Específicos**:
-  - Facilitar a busca de campanhas de doação e informações sobre o processo.
-  - Incentivar a doação de sangue por meio de campanhas e histórias de sucesso.
+Permitir que os usuários acompanhem o impacto de suas doações e se sintam conectados à causa.
 
-## Justificativa
+[Entrevista qualitativa e highlights de pesquisa (1).pdf](https://github.com/user-attachments/files/17959740/Entrevista.qualitativa.e.highlights.de.pesquisa.1.pdf)
+[Persona e proposta de valor.pdf (1).pdf](https://github.com/user-attachments/files/17959743/Persona.e.proposta.de.valor.pdf.1.pdf)
 
-Esse projeto é fundamental para aumentar a conscientização sobre a importância da doação de sangue e para ajudar a conectar doadores a quem precisa de forma mais acessível e eficiente. Foi realizada uma pesquisa com entrevistas qualitativas para fundamentar a importância e o escopo da solução proposta.
+# Justificativa
+A proposta deste projeto é fundamental para aumentar a conscientização e a acessibilidade ao processo de doação de sangue, resolvendo dúvidas frequentes dos doadores e promovendo a confiança no sistema. Através de pesquisas qualitativas e da análise de stakeholders, identificamos que as principais dores dos usuários estão relacionadas à falta de informações transparentes e à dificuldade de encontrar locais convenientes para doação​.
 
-## Público-Alvo
+Além disso, o projeto busca criar uma experiência personalizada e humanizada para os doadores, com recursos que valorizam seu engajamento na causa, como histórias motivadoras e uma comunidade ativa. A plataforma HEMO+ tem o potencial de impactar positivamente não apenas doadores e receptores, mas também hemocentros, hospitais e organizações sociais envolvidas.
 
-- **Pessoas que já são doadoras**: Interessados em encontrar campanhas e locais para doar.
-- **Familiares de pacientes**: Necessitam de uma plataforma para encontrar rapidamente doadores compatíveis.
-- **Interessados em se tornarem doadores**: Precisam de informações confiáveis e incentivo para iniciar.
+# 3.Público-Alvo e Personas
+O projeto HEMO+ tem como público-alvo principal:
 
-## Personas
+Doadores de Sangue Atuais: Pessoas que já realizam doações e desejam facilitar o processo ou ampliar seu impacto.
 
-# Personas / Mapas de Empatia
+Potenciais Doadores de Sangue: Pessoas interessadas em começar a doar sangue, mas que precisam de informações e incentivo.
 
-## Persona 1: Maria Aparecida de Oliveira
+Familiares e Amigos de Pacientes: Indivíduos que buscam conectar receptores a doadores compatíveis.
 
-**Idade:** 35  
-**Hobby:** Desenhar  
-**Trabalho:** Jornalista  
-**Personalidade:** Criativa, alegre, focada, valoriza a família e os amigos.  
-**Sonhos:** Viajar o mundo, viver da arte e ter um dia uma obra exposta em um museu ou galeria de arte.
-
-### Objetos e Lugares
-**Quais objetos físicos e digitais essa pessoa usa? Quando, onde e como ela os usa?**  
-Maria Aparecida faz uso do Facebook, Instagram e WhatsApp. Ela faz uso dessas plataformas para uso pessoal e profissional, para divulgar suas artes e seu trabalho. Maria, por ser jornalista, está sempre dentro das redes sociais para obter notícias e conteúdo. É uma pessoa conectada.
-
-### Objetivos Chave
-**Quais são os objetivos chave dessa pessoa durante a utilização do serviço? Por que eles precisam desse serviço?**  
-Maria busca uma plataforma onde possa divulgar sua arte e alcançar cada vez mais pessoas, seja por propósito pessoal ou profissional. Como jornalista e artista, deseja que a plataforma permita conexão com seu público e que a arte seja valorizada.
-
-### Como Devemos Tratá-la?
-**Como devemos tratá-la para que ela se sinta bem? Quais os tipos de comportamento que deixam essa pessoa feliz?**  
-Essa pessoa gosta de conversar e interagir. Ela gosta de receber elogios sobre suas artes e tem um lado criativo forte.
-
----
-
-## Persona 2: Sergio de Matos Almeida
-
-**Idade:** 60  
-**Hobby:** Pescar  
-**Trabalho:** Empresário  
-**Personalidade:** Amigável, sempre de bom humor, procura ajudar a todos e gosta de viajar.  
-**Sonhos:** Construir uma casa no campo para ter seu descanso e ver seus filhos bem na vida.
-
-### Objetos e Lugares
-**Quais objetos físicos e digitais essa pessoa usa? Quando, onde e como ela os usa?**  
-Sergio lê jornais, utiliza do Facebook, Instagram e WhatsApp. Faz uso dessas plataformas para se manter informado e atualizado dos assuntos atuais e utiliza de forma profissional, tudo isso durante seus horários vagos.
-
-### Objetivos Chave
-**Quais são os objetivos chave dessa pessoa durante a utilização do serviço? Por que eles precisam desse serviço?**  
-O objetivo chave de Sergio é poder ajudar as outras pessoas, visto que seu filho já precisa de doação de ilesão e conhecer esse mundo agora é um doador frequente. Ele acha que o serviço é muito necessário para ajudar mais vidas, assim como a do seu filho foi salva.
-
-### Como Devemos Tratá-lo?
-**Como devemos tratá-lo para que ele se sinta bem? Quais os tipos de comportamento que deixam essa pessoa feliz?**  
-Sergio gosta muito de conversar, então uma boa maneira de deixá-lo bem é confortá-lo com um bom papo. Dizer o quanto essas doações ajudam pessoas fazem ele se sentir bem com o que faz, e isso o torna feliz.
-
----
-
-## Persona 3: Ana Elisa Peixoto Bonfim
-
-**Idade:** 29  
-**Hobby:** Curly Corner  
-**Trabalho:** Advogada  
-**Personalidade:** Uma pessoa justa, não tolera preconceito, está sempre atenta às causas sociais e acredita que o mundo ainda tem jeito.  
-**Sonhos:** Conquistar o sucesso profissional e se envolver em causas sociais que ajudam o mundo.
-
-### Objetos e Lugares
-**Quais objetos físicos e digitais essa pessoa usa? Quando, onde e como ela os usa?**  
-Ana Elisa usa apenas o seu celular. Em seu tempo livre, gosta de ler as notícias do mundo, faz uso do WhatsApp, Instagram, Facebook, Twitter e Reddit, para ficar sempre por dentro do que acontece no mundo.
-
-### Objetivos Chave
-**Quais são os objetivos chave dessa pessoa durante a utilização do serviço? Por que eles precisam desse serviço?**  
-Ana tem uma irmã que está precisando de doação de sangue, constantemente por uma doença crônica, ela procura incentivar outras pessoas e propagar a informação de doadores compatíveis e dispostos a ajudar sua irmã.
-
-### Como Devemos Tratá-la?
-**Como devemos tratá-la para que ela se sinta bem? Quais os tipos de comportamento que deixam essa pessoa feliz?**  
-Ana Elisa gosta de ser tratada com respeito, gosta de estimular pessoas a fazerem boas ações. Ela gosta de apresentar suas ideias e pessoas e levá-las às ONGs que ela apoia e ajuda.
+Organizações e Hemocentros: Instituições que desejam organizar campanhas e aumentar a captação de doadores​.
 
 
-## Exploração 1
+[Matriz de alinhamento e mapa de stakeholders (1).pdf](https://github.com/user-attachments/files/17959922/Matriz.de.alinhamento.e.mapa.de.stakeholders.1.pdf)
+[G2 - Doação de Sangue (4) (1).pdf](https://github.com/user-attachments/files/17959924/G2.-.Doacao.de.Sangue.4.1.pdf)
+[G2 - Doação de Sangue (5).pdf](https://github.com/user-attachments/files/17959926/G2.-.Doacao.de.Sangue.5.pdf)
 
-Requisitos identificados até o momento:
-- Publicação de campanhas
-- Chat para usuários
-- Mapa com pontos de coleta de sangue
-- Barra de pesquisa
-- Fórum de discussões
-- Página inicial com direcionamento
-- Favoritar publicações
-- Comentários
-- Informações sobre doação de sangue
+# Personas
+As personas representam os diferentes perfis do público que utilizarão a plataforma. Abaixo estão exemplos baseados nas informações coletadas:
 
-## Projeto de Interface
+# Persona 1: Daniela Oliveira
+Idade: 37 anos
+Hobby: Aprender novos idiomas
+Trabalho: Diplomata
+Sonhos: Criar uma ONG de resgate a animais e conhecer o mundo
+Personalidade: Extrovertida, comunicativa e generosa​(Persona e proposta de v…).
+Necessidades:
 
-Baseado nos requisitos, o User Flow foi desenhado com as páginas essenciais: Home, Campanhas, Doe Sangue, Receba uma Doação, Sobre Nós, entre outras. Wireframes foram criados no Figma: [Protótipo no Figma](https://www.figma.com/proto/sX50viTaWAOpkUKbe8NUuY/Hemo%2B?nodeid=132-69&node-type=canvas&t=HNrdEXbRfLpeSW4p-1&scaling=minzoom&content-scaling=fixed&page-id=0%3A1)
+Conexão emocional com a causa por meio de histórias inspiradoras.
+Informações detalhadas e transparentes sobre o impacto de suas doações.
+Objetivos:
 
-## Metodologia
+Continuar sendo doadora regular.
+Acompanhar campanhas e histórias de sucesso.
+Comportamento Ideal:
 
-A metodologia utilizada foi o Kanban para controle de tarefas, com o Trello como ferramenta de suporte para organizar o fluxo de trabalho.
+Deve ser tratada com empatia, transparência e reconhecimento.
 
-## Wireframes
+# Persona 2: José Antunes
+Idade: 45 anos
+Hobby: Caminhar no parque
+Trabalho: Motorista de aplicativo
+Sonhos: Garantir a saúde de sua família e ajudar a salvar vidas
+Necessidades:
 
-Utilizamos o figma para fazer toda a interface do projeto.
+Saber onde e como doar sangue de forma rápida e prática.
+Localizar hemocentros próximos com horários disponíveis.
+Objetivos:
+
+Tornar-se doador ativo.
+Contribuir para campanhas específicas que salvem vidas.
+Comportamento Ideal:
+
+Precisa de instruções claras e suporte para superar barreiras como medo ou desinformação.
+
+# Persona 3: Ana Paula
+Idade: 29 anos
+Hobby: Escrever contos e ler livros
+Trabalho: Professora
+Sonhos: Inspirar seus alunos e contribuir para causas sociais
+Necessidades:
+
+Encontrar informações confiáveis sobre doação.
+Participar de uma comunidade de doadores para se sentir engajada.
+Objetivos:
+
+Ajudar outras pessoas por meio de campanhas regulares.
+Incentivar seus alunos e colegas a doarem sangue.
+Comportamento Ideal:
+
+Deve ser acolhida em uma plataforma amigável e intuitiva.
+
+# 4. Requisitos do Sistema
+ - Cadastro de Doador de Sangue:
+   
+Permitir o registro de doadores, incluindo informações como nome, tipo sanguíneo e dados de contato.
+
+ - Cadastro de Receptores:
+
+Disponibilizar uma funcionalidade para registrar receptores e suas necessidades específicas​.
+
+ - Perfil do Doador e do Receptor:
+
+Exibir informações personalizadas em uma página dedicada para cada perfil, como histórico de doações e necessidades atuais​.
+
+ - Campanhas de Doação:
+
+Criar e gerenciar campanhas para atrair novos doadores.
+
+ - Busca por Palavras-Chave:
+
+Permitir que os usuários localizem campanhas, informações ou perfis específicos através de palavras-chave​.
+
+ - Mapa de Unidades Próximas:
+
+Fornecer um mapa interativo para localizar hemocentros próximos​.
+
+ - Cadastro de Dúvidas:
+
+Criar uma funcionalidade para registrar dúvidas frequentes e fornecer respostas claras.
+
+ - Classificação de Experiências e Testemunhos:
+
+Permitir que usuários classifiquem e compartilhem suas experiências relacionadas à doação​.
+
+ - Reações e Apresentação de Experiências:
+
+Exibir histórias e reações de forma atrativa e interativa para incentivar mais pessoas a doarem​.
+
+ - Busca, Filtro e Ordenação de Testemunhos:
+
+Oferecer ferramentas para organizar e acessar testemunhos de maneira personalizada​.
+
+# 5. Projeto de Interface e Design
+# 5.1 Planejamento do Design
+O projeto de interface foi pensado para oferecer uma experiência amigável e intuitiva ao usuário. As principais diretrizes de design incluem:
+
+ - Cores e Identidade Visual: Utilização de cores relacionadas à área da saúde (ex.: vermelho, branco e azul), transmitindo confiança e acessibilidade.
+
+ - Tipografia: Fontes simples e legíveis para facilitar a leitura em diferentes dispositivos.
+
+ - Elementos Gráficos: Ícones representativos (como gotas de sangue e cruzes médicas) para reforçar o tema da plataforma.
+
+# 5.2 Wireframes e Prototipação
+Os wireframes iniciais foram desenvolvidos para definir o layout de cada página, garantindo que as funcionalidades fossem dispostas de forma clara e acessível. Algumas telas importantes incluem:
+
+- 1.Tela de Login/Cadastro
+  
+Descrição:
+
+Permite que usuários se cadastrem como doadores. Eles fornecem informações pessoais, tipo sanguíneo e dados de contato para posterior uso no sistema.
+
+Objetivo: Permitir o acesso e registro de novos usuários.
+
+Elementos: Campos para email, senha e botões de ação.
+
+![image](https://github.com/user-attachments/assets/670d88a8-b53c-41ad-baf2-b5a113d396e7)
+
+ - 2.Tela de Campanha de Doação
+   
+Descrição:
+
+Exibe campanhas de doação cadastradas, com informações como local, data, e objetivos. Permite que os administradores ou usuários organizem novas campanhas.
+
+Elementos Visuais:
+
+Lista de campanhas com títulos, descrições e datas.
+Botão "Criar Campanha".
+
+(esperando foto/Bernardo e Lucas)
+
+- 3.Tela de Cadastro de Receptores
+     
+Descrição:
+
+Funcionalidade para registrar receptores e suas necessidades, como tipo sanguíneo específico e quantidade necessária.
+
+Elementos Visuais:
+
+Campos para nome, tipo sanguíneo e dados de contato.
+Botão "Cadastrar Receptor".
+
+Print da Tela:
+
+(esperando foto/Marina)
+
+ - 4.Perfil do Receptor
+      
+Descrição:
+
+Exibe as informações cadastradas de um receptor, incluindo as doações recebidas e necessidades pendentes.
+
+Elementos Visuais:
+
+Dados pessoais do receptor.
+Histórico de doações recebidas.
+
+(esperando foto/Marina)
+
+ - 5.Perfil do Doador
+      
+Descrição:
+
+Mostra informações detalhadas sobre o doador, como o histórico de doações realizadas e campanhas em que participou.
+
+Elementos Visuais:
+
+Foto do perfil.
+Dados pessoais e histórico de doações.
+
+![image](https://github.com/user-attachments/assets/8c1bc036-38b8-43cb-a436-3e2ebe8ba402)
+
+
+ - 6.Tela de Busca por Palavras-Chave
+      
+Descrição:
+
+Fornece uma barra de pesquisa para localizar campanhas, hemocentros, ou outras informações relevantes.
+
+Elementos Visuais:
+
+Barra de pesquisa no topo.
+Resultados organizados em lista.
+
+Print da Tela:
+(esperando foto/Mariana)
+
+- 7.Tela de Cadastro de Dúvidas
+     
+Descrição:
+Permite que usuários insiram perguntas frequentes e suas respectivas respostas, promovendo a clareza sobre o processo de doação.
+
+Elementos Visuais:
+
+Campo para inserir perguntas e respostas.
+Botão "Cadastrar".
+
+Print da Tela:
+(esperando foto/ Mariana)
+
+ - 8.Página "Sobre Nós"
+      
+Descrição:
+Apresenta informações sobre o projeto, seus objetivos, e os desenvolvedores.
+
+Elementos Visuais:
+
+Texto explicativo.
+Links para redes sociais ou páginas relacionadas.
+
+Print da Tela:
+(esperando foto/Eder)
+
+ - 9.Mapa de Unidades Próximas
+       
+Descrição:
+Exibe um mapa interativo com hemocentros próximos ao usuário, com base na localização geográfica.
+
+Elementos Visuais:
+
+Mapa central com marcadores de hemocentros.
+Informações sobre horários e disponibilidade ao clicar nos marcadores.
+
+Print da Tela:
+(esperando foto/Eder)
+
+ - 10.Classificação de Experiências e Testemunhos
+       
+Descrição:
+Permite que usuários compartilhem e classifiquem experiências relacionadas à doação de sangue.
+
+Elementos Visuais:
+
+Seções para histórias e comentários.
+Botões para classificação ou reações.
+
+Print da Tela:
+(esperando foto/Kayke)
+
+ - 11.Tela de Reações aos Testemunhos
+       
+Descrição:
+Exibe reações às histórias compartilhadas, permitindo que outros usuários interajam com os relatos.
+
+Elementos Visuais:
+
+Lista de testemunhos.
+Botões de reação (curtidas, emojis, etc.).
+
+Print da Tela:
+(esperando foto/Kayke)
+
+ - 12.Tela de Busca, Filtro e Ordenação de Testemunhos
+       
+Descrição:
+Facilita a navegação por histórias, permitindo que usuários filtrem ou ordenem testemunhos com base em categorias, datas ou popularidade.
+
+Elementos Visuais:
+
+Barra de filtros no topo.
+Lista de resultados filtrados.
+
+Print da Tela:
+(esperando foto/Kayke)
+
+# 5.3 Protótipo Visual
+O protótipo foi desenvolvido utilizando ferramentas como o Figma, que permitiu:
+
+Simular interações entre as telas.
+
+Validar o design com base no feedback da equipe e de usuários potenciais.
+
+# 5.4 Acessibilidade e Responsividade
+Acessibilidade: Foram seguidas diretrizes como contraste de cores adequado e alternativas textuais para imagens.
+
+Responsividade: O layout foi testado em diferentes dispositivos para garantir uma boa experiência tanto em desktops quanto em smartphones e tablets.
+
+# 5.5 Ferramentas Utilizadas
+O desenvolvimento do sistema HEMO+ utilizou diversas ferramentas e tecnologias para garantir funcionalidade, responsividade e uma boa experiência para o usuário:
+
+- Figma
+
+Utilizado para criar wireframes e protótipos visuais das telas.
+
+- HTML e CSS
+
+Estruturação e estilização das páginas da aplicação.
+
+- Bootstrap
+
+Framework CSS para garantir responsividade e uniformidade no design.
+
+- JavaScript (JS)
+
+Para adicionar interatividade às páginas, como validação de formulários e exibição dinâmica de conteúdos.
+
+- JSON
+
+Utilizado para armazenar e gerenciar dados de forma estruturada, como informações de doadores, campanhas e hemocentros.
+
+- Google Maps API
+
+Para implementar o mapa interativo na funcionalidade de localizar hemocentros.
+
+- Servidor JSON (ex.: JSON Server ou similar)
+
+Para simular um backend e manipular os dados do sistema durante o desenvolvimento.
