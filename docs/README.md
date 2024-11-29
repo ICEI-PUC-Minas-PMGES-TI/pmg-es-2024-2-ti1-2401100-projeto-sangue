@@ -384,3 +384,126 @@ Para implementar o mapa interativo na funcionalidade de localizar hemocentros.
 - Servidor JSON (ex.: JSON Server ou similar)
 
 Para simular um backend e manipular os dados do sistema durante o desenvolvimento.
+
+# 6. Metodologia
+# 6.1 Abordagem Utilizada
+O projeto HEMO+ foi desenvolvido utilizando uma abordagem ágil, permitindo entregas incrementais e maior flexibilidade para ajustes durante o desenvolvimento.
+
+Metodologia Ágil: SCRUM
+
+O desenvolvimento foi dividido em sprints, cada uma com objetivos claros e entregas específicas.
+
+As sprints incluíram atividades como elicitação de requisitos, desenvolvimento de funcionalidades, testes e revisões.
+
+# 6.2 Planejamento das Sprints
+O planejamento das sprints foi fundamental para organizar o trabalho da equipe. As principais etapas incluíram:
+
+Sprint 1:
+
+- Objetivo: Documentação inicial e levantamento de requisitos.
+- Atividades: Criação de wireframes, definição do público-alvo e elicitação de requisitos funcionais e não funcionais.
+
+Sprint 2:
+
+- Objetivo: Desenvolvimento inicial das principais funcionalidades.
+- Atividades:
+  - Implementação do cadastro de doadores e receptores.
+  - Desenvolvimento do mapa de hemocentros e campanhas de doação.
+  - Prototipação e validação de telas com o grupo.
+
+ Sprint 3:
+
+- Objetivo: Refinamento das funcionalidades e testes.
+- Atividades:
+  - Ajustes na interface com base no feedback.
+  - Integração de funcionalidades como busca, filtro e ordenação de testemunhos.
+  - Testes de usabilidade e correção de erros.
+
+  Sprint 4:
+
+- Objetivo: Conclusão e entrega do projeto.
+- Atividades:
+  - Revisão final das telas e funcionalidades.
+  - Testes finais de desempenho e acessibilidade.
+  - Apresentação do projeto para a equipe avaliadora.
+
+  # 6.3 Ferramentas para Gerenciamento
+Para organizar e monitorar o progresso do projeto, foram utilizadas as seguintes ferramentas:
+
+- Trello:
+Para gestão de tarefas e acompanhamento das atividades de cada sprint.
+
+- GitHub:
+Controle de versão e repositório do código-fonte.
+
+# 6.4 Estratégia de Comunicação
+A equipe utilizou métodos de comunicação eficazes para alinhar expectativas e resolver problemas rapidamente:
+
+- Reuniões Semanais: Planejamento e revisão das tarefas concluídas.
+- Grupos de Mensagens: Uso de WhatsApp para comunicação rápida e discussões informais.
+
+# 6.5 Justificativa da Metodologia
+A escolha pela metodologia ágil SCRUM foi baseada na necessidade de:
+
+- Flexibilidade para lidar com mudanças nos requisitos.
+- Entregas incrementais que permitiram ajustes constantes.
+- Maior colaboração entre os membros da equipe, garantindo que todos estivessem alinhados durante o desenvolvimento.
+
+# 7. Testes
+# 7.1 Planejamento dos Testes
+O sistema HEMO+ passou por diferentes tipos de testes para garantir sua funcionalidade, desempenho e usabilidade. O planejamento incluiu:
+
+- Testes Funcionais: Verificar se cada funcionalidade do sistema opera de acordo com os requisitos definidos.
+- Testes de Usabilidade: Avaliar a facilidade de uso e compreensão da interface pelos usuários.
+- Testes de Acessibilidade: Garantir que o sistema seja inclusivo e acessível para todos os usuários.
+
+# 7.2 Tipos de Testes Realizados
+1. Testes Funcionais
+   
+Objetivo: Garantir que as funcionalidades atendam aos requisitos.
+
+Funcionalidades Testadas:
+
+- Cadastro de doadores e receptores.
+- Busca por campanhas e hemocentros.
+- Publicação de campanhas de doação.
+- Reações e classificação de testemunhos.
+- Método: Testes manuais realizados pelos integrantes da equipe.
+- Resultado: Todas as funcionalidades principais funcionaram como esperado, com pequenas correções realizadas durante o processo.
+
+# 7.3 Resultados Gerais
+Os testes confirmaram que o sistema atende aos requisitos propostos, com boa usabilidade e desempenho satisfatório. Pequenos ajustes foram implementados ao longo do processo para aprimorar a experiência dos usuários.
+
+# 8. Conclusão
+# 8.1 Resumo do Projeto
+O projeto HEMO+ teve como objetivo desenvolver uma plataforma digital capaz de conectar doadores e receptores de sangue, promovendo campanhas de doação e facilitando o acesso a informações confiáveis sobre o processo de doação. Desde o planejamento até a execução, o sistema foi criado com foco na acessibilidade, usabilidade e impacto social, atendendo às necessidades do público-alvo.
+
+# 8.2 Resultados Alcançados
+Conexão entre Doadores e Receptores: A plataforma permite que doadores e receptores se conectem de forma prática e segura.
+
+Facilidade de Localização: Com a funcionalidade de mapas, os usuários podem identificar hemocentros próximos de forma rápida.
+
+Engajamento Social: Campanhas de doação e histórias inspiradoras promovem o engajamento da comunidade com a causa.
+
+Plataforma Acessível: A interface responsiva e inclusiva garante que usuários de diferentes perfis possam utilizar o sistema.
+
+# 8.3 Desafios Superados
+Ajustes de design para melhorar a navegação e usabilidade.
+
+Integração de funcionalidades, como buscas e mapa interativo, garantindo eficiência no sistema.
+
+Testes contínuos para identificar e corrigir erros antes da entrega final.
+
+# 8.4 Perspectivas Futuras
+O projeto HEMO+ tem um grande potencial de crescimento e melhorias. Algumas sugestões para futuras implementações incluem:
+
+Integração com APIs de Bancos de Sangue: Para fornecer dados em tempo real sobre estoques disponíveis.
+
+Funcionalidade de Agendamento Online: Permitir que doadores agendem diretamente suas doações nos hemocentros.
+
+Gamificação: Implementar sistemas de recompensas para doadores frequentes, incentivando o engajamento contínuo.
+
+Aplicativo Mobile: Expandir o alcance da plataforma por meio de um aplicativo nativo para dispositivos móveis.
+
+# 8.5 Agradecimentos
+Agradecemos a todos os envolvidos no desenvolvimento do projeto, incluindo colegas de equipe, orientadores e usuários que contribuíram com feedback durante as etapas de design e teste.
