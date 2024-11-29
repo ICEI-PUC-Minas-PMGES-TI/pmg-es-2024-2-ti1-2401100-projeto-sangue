@@ -26,6 +26,8 @@ Uma Solução Digital para Facilitar e Incentivar a Doação de Sangue.
  Dezembro de 2024.
 # Elementos Visuais
 ![logo](https://github.com/user-attachments/assets/d9199459-0ca5-4cc5-958c-45accb40e8d6)
+![WhatsApp Image 2024-11-29 at 13 32 33](https://github.com/user-attachments/assets/8f94e6a9-2104-4ccd-988a-522a127d80aa)
+
 
 # 2.Introdução
 - Contextualização
@@ -260,8 +262,8 @@ Elementos Visuais:
 Barra de pesquisa no topo.
 Resultados organizados em lista.
 
-Print da Tela:
-(esperando foto/Mariana)
+![WhatsApp Image 2024-11-29 at 13 48 29](https://github.com/user-attachments/assets/cee108c6-e536-4cbf-94ae-ee47f2912aa6)
+![WhatsApp Image 2024-11-29 at 13 48 29 (1)](https://github.com/user-attachments/assets/372a81d0-1e7e-4109-9f54-6cc10bcfa7f9)
 
 - 7.Tela de Cadastro de Dúvidas
      
@@ -273,8 +275,7 @@ Elementos Visuais:
 Campo para inserir perguntas e respostas.
 Botão "Cadastrar".
 
-Print da Tela:
-(esperando foto/ Mariana)
+![WhatsApp Image 2024-11-29 at 13 48 30](https://github.com/user-attachments/assets/6365681b-3d17-4321-987e-c9b99c574c7e)
 
  - 8.Página "Sobre Nós"
       
