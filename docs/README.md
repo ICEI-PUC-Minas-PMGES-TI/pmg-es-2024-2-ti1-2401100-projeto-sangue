@@ -222,7 +222,7 @@ Botão "Cadastrar Receptor".
 
 Print da Tela:
 
-(esperando foto/Marina)
+![WhatsApp Image 2024-11-29 at 15 39 18](https://github.com/user-attachments/assets/0cdfb21d-1f0c-4e65-a5bf-c757d72be638)
 
  - 4.Perfil do Receptor
       
@@ -235,7 +235,7 @@ Elementos Visuais:
 Dados pessoais do receptor.
 Histórico de doações recebidas.
 
-(esperando foto/Marina)
+![WhatsApp Image 2024-11-29 at 15 59 37](https://github.com/user-attachments/assets/13bb0b88-f703-4074-9e55-0a5798d1bc34)
 
  - 5.Perfil do Doador
       
