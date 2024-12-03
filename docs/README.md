@@ -300,8 +300,7 @@ Elementos Visuais:
 Mapa central com marcadores de hemocentros.
 Informações sobre horários e disponibilidade ao clicar nos marcadores.
 
-Print da Tela:
-(esperando foto/Eder)
+![WhatsApp Image 2024-12-03 at 11 35 54](https://github.com/user-attachments/assets/12e7e65a-4ccb-435a-9ac4-abefafaa9965)
 
  - 10.Classificação de Experiências e Testemunhos
        
