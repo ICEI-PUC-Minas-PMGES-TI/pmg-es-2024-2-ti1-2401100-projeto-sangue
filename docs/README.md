@@ -312,8 +312,7 @@ Elementos Visuais:
 Seções para histórias e comentários.
 Botões para classificação ou reações.
 
-Print da Tela:
-(esperando foto/Kayke)
+![WhatsApp Image 2024-12-03 at 11 59 29](https://github.com/user-attachments/assets/8c00cc57-0863-476d-a836-992e03e02bc6)
 
  - 11.Tela de Reações aos Testemunhos
        
@@ -325,21 +324,24 @@ Elementos Visuais:
 Lista de testemunhos.
 Botões de reação (curtidas, emojis, etc.).
 
-Print da Tela:
-(esperando foto/Kayke)
+![WhatsApp Image 2024-12-03 at 11 59 29](https://github.com/user-attachments/assets/3822cdd5-557a-4739-a4a3-a54ef92481a6)
 
- - 12.Tela de Busca, Filtro e Ordenação de Testemunhos
+ - 12.Tela de Testemunhos e Compartilhamento de Experiências
        
 Descrição:
-Facilita a navegação por histórias, permitindo que usuários filtrem ou ordenem testemunhos com base em categorias, datas ou popularidade.
+Permite aos usuários navegar por histórias de doação e recepção, além de compartilhar suas próprias experiências. Com recursos de busca, filtro e ordenação, os usuários podem encontrar testemunhos relevantes ou enviar os seus.
 
 Elementos Visuais:
 
-Barra de filtros no topo.
-Lista de resultados filtrados.
+Barra de busca: Localizada no topo da lista de testemunhos, possibilita a busca por palavras-chave.
 
-Print da Tela:
-(esperando foto/Kayke)
+Lista de testemunhos: Apresenta as histórias compartilhadas com nome do autor, tipo de experiência (doador/receptor), data e descrição.
+
+Interação com reações: Botões para reagir às histórias com emojis (curtidas, apoio, emoção, etc.).
+
+Botão de "Compartilhar Experiência": Abre um modal que permite o envio de novas histórias.
+
+![WhatsApp Image 2024-12-03 at 11 59 39](https://github.com/user-attachments/assets/3bbfdd7e-8601-4e1f-abbd-df2c89a6a17c)
 
 # 5.3 Protótipo Visual
 O protótipo foi desenvolvido utilizando ferramentas como o Figma, que permitiu:
