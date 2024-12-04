@@ -1,31 +1,38 @@
-cff-version: 1.0.1
-message: Please cite this software using these metadata.
-title: 
+cff-version: 1.2.0
+message: "Por favor, cite este projeto utilizando os metadados abaixo."
+title: "HEMO+: Conectando Doadores e Receptores de Sangue"
 authors:
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names:
-  - name-suffix: Professor
-    affiliation: PUC Minas
-    family-names: 
-    given-names: 
-  - name-suffix: Professor
-    affiliation: PUC Minas
-    family-names: 
-    given-names: 
+  - family-names: "Denucci"
+    given-names: "Bernardo Carvalho"
+  - family-names: "Andrade"
+    given-names: "Éder Jair"
+  - family-names: "Santos"
+    given-names: "Kayke Emanoel de Souza"
+  - family-names: "Martins"
+    given-names: "Lucas Fonseca"
+  - family-names: "Tavares"
+    given-names: "Mariana Fonseca Reis"
+  - family-names: "Diniz"
+    given-names: "Marina Silva"
+  - family-names: "Berto"
+    given-names: "Matheus Cordeiro"
+  - name-suffix: "Professor"
+    family-names: "Barros"
+    given-names: "Diego Augusto de Faria"
+    affiliation: "PUC Minas"
+  - name-suffix: "Professor"
+    family-names: "Aramuni"
+    given-names: "João Paulo Carneiro"
+    affiliation: "PUC Minas"
+  - name-suffix: "Professora"
+    family-names: "Soares de Andrade"
+    given-names: "Michelle Hanne"
+    affiliation: "PUC Minas"
 keywords:
-  - 
-  - 
-repository-code: 
-license: CC-BY-4.0
-version: 1.0.0
-date-released: 2022-07-14
+  - Doação de Sangue
+  - Voluntariado
+  - Saúde Pública
+repository-code: "https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-2-ti1-2401100-projeto-sangue"
+license: "CC-BY-4.0"
+version: "1.0.0"
+date-released: 2024-12-04
