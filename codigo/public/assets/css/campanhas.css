@@ -1,0 +1,153 @@
+/* Geral */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Pacifico', cursive;
+}
+
+p {
+    font-family: 'Borel', serif;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #E14771;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .text-2xl {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+nav a {
+    color: black;
+    margin-left: 1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Conteúdo principal */
+main {
+    padding: 1rem 2rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+section .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 12rem;
+    cursor: pointer;
+    background-color: #F49CBB;
+}
+
+section .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+section .card span {
+    position: absolute;
+    color: white;
+    font-weight: bold;
+}
+
+/* Modal */
+#modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s ease-in-out, visibility 0.3s;
+}
+
+#modal.active {
+    display: flex;
+}
+
+#modal div {
+    background-color: #F49CBB;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    width: 90%;
+    max-width: 60%;
+    height: 70%;
+    position: relative;
+    opacity: 0.9;
+}
+
+#modal #closeModal {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: #E14771;
+    font-weight: bold;
+    font-size: 1.125rem;
+}
+
+/* Carousel */
+.carousel-items {
+    display: flex;
+    width: 100%;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.carousel-items > div {
+    flex: 0 0 25%; /* Quatro itens visíveis */
+}
+
+.carousel-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-buttons button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.carousel-buttons button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Transições */
+.modal, #modal {
+    transition: visibility 0.3s ease, opacity 0.3s ease;
+}
