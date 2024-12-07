@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Lora:wght@400&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Cabeçalho -->
     <header>
         <nav class="menu">
             <div class="logo">
@@ -16,38 +17,39 @@
             </div>
             <ul class="nav-links">
                 <li><a href="#">INÍCIO</a></li>
-                <li><a href="#">DOE SANGUE</a></li>
+                <li><a href="../../index.html">DOE SANGUE</a></li>
                 <li><a href="#">PRECISO DE DOAÇÃO</a></li>
                 <li><a href="#">CAMPANHAS</a></li>
                 <li><a href="#">DÚVIDAS</a></li>
                 <li><a href="#">SOBRE NÓS</a></li>
             </ul>
             <div class="perfil">
-                <a href="../perfil_doador/pagina_perfil.html">
+                <a href="../../modulos/perfil_doador/pagina_perfil.html">
                     <img src="../../assets/images/foto_perfil.png" alt="Perfil" class="perfil-icon">
                 </a>
             </div>
         </nav>
     </header>
 
+    <!-- Seção de título -->
     <section class="hero">
         <div class="text-center">
             <h1>Minhas Informações</h1>
         </div>
     </section>
 
+    <!-- Seção de informações do perfil -->
     <section class="perfil-info">
         <div class="foto-perfil">
-            <img src="../../assets/images/foto_perfil.png" alt="Foto de Perfil">
-            <input type="file" id="inputFoto" accept="image/*" style="display: none;">
+            <img src="../../assets/images/foto_perfil.png" alt="Foto de Perfil" id="fotoAtual">
             <button id="btnAlterarFoto" class="btn-alterar-foto">Alterar Foto</button>
             <div id="seletorFotos" style="display: none;">
                 <p>Escolha uma nova foto de perfil:</p>
-                <img src="../../assets/images/foto1.png" alt="Foto 1" class="foto-opcao" onclick="alterarFoto('img/foto1.png')">
-                <img src="../../assets/images/foto2.png" alt="Foto 2" class="foto-opcao" onclick="alterarFoto('img/foto2.png')">
-                <img src="../../assets/images/foto3.png" alt="Foto 3" class="foto-opcao" onclick="alterarFoto('img/foto3.png')">
+                <img src="../../assets/images/foto1.png" alt="Foto 1" class="foto-opcao">
+                <img src="../../assets/images/foto2.png" alt="Foto 2" class="foto-opcao">
+                <img src="../../assets/images/foto3.png" alt="Foto 3" class="foto-opcao">
             </div>
-        </div>
+        </div>                   
         <div class="detalhes-perfil">
             <h2 id="nome-usuario"></h2>
             <p id="idade-usuario"></p>
@@ -63,6 +65,7 @@
         </div>
     </section>
 
+    <!-- Script Principal -->
     <script src="../../assets/js/script.js"></script>
 </body>
 </html>

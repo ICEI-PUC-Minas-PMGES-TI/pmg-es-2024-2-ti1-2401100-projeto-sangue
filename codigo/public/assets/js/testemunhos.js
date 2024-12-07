@@ -4,7 +4,8 @@ const testemunhosApp = {
             id: 1,
             nome: "Ana Souza", 
             data: "20/07/2024", 
-            experiencia: "Foi uma experiência incrível. Senti que estava ajudando alguém em necessidade e a equipe foi muito acolhedora.", 
+            experiencia: "Foi uma experiência incrível. Senti que estava ajudando alguém em necessidade e a equipe foi muito acolhedora.",
+            tipo_experiencia: "Doador",
             reacoes: { tipo1: 0, tipo2: 0, tipo3: 0, tipo4: 0 } 
         },
         { 
@@ -12,6 +13,7 @@ const testemunhosApp = {
             nome: "Lucas Oliveira", 
             data: "16/08/2024", 
             experiencia: "Doar sangue é um ato simples, mas que faz uma grande diferença. Recomendo a todos que façam!", 
+            tipo_experiencia: "Doador",
             reacoes: { tipo1: 0, tipo2: 0, tipo3: 0, tipo4: 0 } 
         },
         { 
@@ -19,6 +21,7 @@ const testemunhosApp = {
             nome: "Mariana Lima", 
             data: "23/08/2024", 
             experiencia: "Eu estava nervosa no início, mas a equipe me tranquilizou e foi tudo muito rápido e fácil.", 
+            tipo_experiencia: "Receptor",
             reacoes: { tipo1: 0, tipo2: 0, tipo3: 0, tipo4: 0 } 
         },
         { 
@@ -26,13 +29,15 @@ const testemunhosApp = {
             nome: "Rafael Santos", 
             data: "25/09/2024", 
             experiencia: "A doação é rápida e segura. Fico feliz em saber que posso ajudar a salvar vidas.", 
+            tipo_experiencia: "Doador",
             reacoes: { tipo1: 0, tipo2: 0, tipo3: 0, tipo4: 0 }  
         },
         { 
             id: 5,
             nome: "Juliana Costa", 
             data: "13/10/2024", 
-            experiencia: "Eu nunca tinha doado antes, mas agora que fiz, pretendo voltar sempre. É um gesto de amor ao próximo.", 
+            experiencia: "Fui muito bem atendida e não tive complicações após a transfusão. Muito obrigada!",
+            tipo_experiencia: "Receptor",
             reacoes: { tipo1: 0, tipo2: 0, tipo3: 0, tipo4: 0 } 
         }
     ],
@@ -52,10 +57,11 @@ const testemunhosApp = {
 
             const nome = nomeInput.value.trim();
             const experiencia = experienciaInput.value.trim();
+            const tipo_experiencia = document.querySelector("input[name='donationType']:checked")?.value;
             const data = new Date().toLocaleDateString();
 
             if (nome && experiencia) {
-                const testemunho = { nome, data, experiencia, reacoes: { tipo1: 0, tipo2: 0, tipo3: 0, tipo4: 0 } };
+                const testemunho = { nome, data, experiencia, reacoes: { tipo1: 0, tipo2: 0, tipo3: 0, tipo4: 0 }, tipo_experiencia };
                 this.salvarTestemunho(testemunho);
                 this.exibirTestemunho(testemunho, 0);
                 formulario.reset();
@@ -134,8 +140,8 @@ const testemunhosApp = {
         }
     },
 
-    exibirTestemunho: function ({ id, nome, data, experiencia, reacoes }) {
-        if (!nome || !data || !experiencia || !reacoes) {
+    exibirTestemunho: function ({ id, nome, data, experiencia, tipo_experiencia, reacoes }) {
+        if (!nome || !data || !experiencia || !tipo_experiencia || !reacoes) {
             return;
         }
     
@@ -146,6 +152,7 @@ const testemunhosApp = {
         itemTestemunho.innerHTML = `
             <h4>Testemunho de: ${nome}</h4>
             <p class="text-muted">Data: ${data}</p>
+            <p><strong>Tipo de experiência:</strong> ${tipo_experiencia}</p>
             <p>${experiencia}</p>
             <div class="reaction-buttons">
                 <button class="btn btn-outline-primary me-2" onclick="testemunhosApp.adicionarReacao(${id}, 'tipo1')">👍 ${reacoes.tipo1}</button>
