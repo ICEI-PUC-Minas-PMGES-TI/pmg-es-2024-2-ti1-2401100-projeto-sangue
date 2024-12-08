@@ -27,54 +27,129 @@ body {
     }
 }
 /*Header*/
+/* Estilos do Cabeçalho e Menu de Navegação */
 header {
+    background-color: #f5f5f5ad;
+    padding: 5px;
+    position: relative;
     width: 100%;
-    height: auto;
+}
+header #toggler{
+    display: none;
+}
+header .fa-bars{
+    font-size: 3rem;
+    color: #991212;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+.logo img {
+    width: 145px;
+    height: 70px;
+}
+/* Ícone de Perfil no Menu */
+.perfil {
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    background-color: #f49cbb54;
+    margin-left: 20px;
 }
-
-header li {
-    display: inline;
-    margin: 0 20px;
-    text-decoration: none;
+.perfil-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
 }
-
-header li a {
-    display: inline;
-    margin: 0 20px;
-    text-decoration: none;
+.perfil-icon:hover {
+    opacity: 0.8;
 }
-
-nav {
+/*mobile icon*/
+.mobile-menu div{
+    width: 32px;
+    height: 3px;
+    background-color: #000;
+    margin: 6px;
+}
+.mobile-menu{
+    cursor: pointer;
+    display: none;
+}
+.menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #991212;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.nav-links li a:hover {
+    color: #d9534f;
+}
+/*fim cabeçalho*/
+
+/*footer*/
+footer {
+    color: rgb(0, 0, 0);
+    padding: 1.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     width: 100%;
+    margin-top: 1.8rem;
 }
 
-.navbar-brand {
-    margin-right: 30px;
+footer div {
+    margin: 0.5rem 0;
 }
 
-.navbar-nav .nav-link {
-    color: #5A2D2D;
-    background-color: #f7adbb83;
-    padding: 10px 15px;
-    border-radius: 15px;
-    margin: 0 10px;
+#footer_social {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
 }
 
-.navbar-nav .nav-link:hover {
-    color: #1b5f8d;
+.footer-link {
+    height: 2.5rem;
+    width: 2.5rem;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
+.footer-link:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+#Instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#Youtube {
+    background-color: rgb(218, 29, 29);
+}
+
+#Github {
+    background: #24292e;
+}
 /*Perfil*/
 .upload{
     position: relative;
@@ -164,7 +239,7 @@ nav {
     outline: 1px solid #dd2d4a;
 }
 
-.input-box label, {
+.input-box label {
     font-size: 0.75rem;
     font-weight: 600;
     color: #000000c0;
@@ -200,17 +275,6 @@ nav {
     display: flex;
     justify-content: center;
     background-color: white;
-}
-/*Footer*/
-footer {
-    background-color: #f49cbb38;
-    padding: 50px;
-    text-align: center;
-    color: #000000;
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    bottom: 0;
 }
 
 .informacoes {

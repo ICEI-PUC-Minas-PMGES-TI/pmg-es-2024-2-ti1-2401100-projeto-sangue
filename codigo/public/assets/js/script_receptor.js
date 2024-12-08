@@ -56,7 +56,7 @@ $(document).ready(function () {
 
                 // Redireciona para a Home(quando tiver uma)
                 setTimeout(function () {
-                    window.location.href = 'index.html';
+                    window.location.href = 'homepage.html';
                 }, 2000);
             },
             error: function (xhr, status, error) {

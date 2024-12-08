@@ -5,30 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Doador</title>
     <link rel="stylesheet" href="../../assets/css/style_M.css">
-    <link rel="shortcut icon" href="../../assets/images/logo.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Lora:wght@400&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../../assets/images/icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../modulos/Eder ti/LocaisStile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
+
 <body>
+    <!--Cabeçalho-->
     <header>
-        <nav class="menu">
-            <div class="logo">
-                <img src="../../assets/images/logo.png" alt="Logo Doação de Sangue">
-            </div>
-            <ul class="nav-links">
-                <li><a href="#">INÍCIO</a></li>
-                <li><a href="../../index.html">DOE SANGUE</a></li>
-                <li><a href="#">PRECISO DE DOAÇÃO</a></li>
-                <li><a href="#">CAMPANHAS</a></li>
-                <li><a href="#">DÚVIDAS</a></li>
-                <li><a href="#">SOBRE NÓS</a></li>
-            </ul>
-            <div class="perfil">
-                <a href="../../modulos/perfil_doador/pagina_perfil.html">
-                    <img src="../../assets/images/foto_perfil.png" alt="Perfil" class="perfil-icon">
-                </a>
-            </div>                
-        </nav>
-    </header>
+        <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    <nav class="menu">
+        <div class="logo">
+            <img src="../../assets/images/logo_nova.png" alt="Logo Doação de Sangue">
+        </div>
+        <ul class="nav-links">
+            <li><a href="../../modulos/HomePage/homepage.html">INÍCIO</a></li>
+            <li><a href="../../modulos/doacao_de_sangue/index.html">DOE SANGUE</a></li>
+            <li><a href="../../modulos/form_receptor_html/index.html">PRECISO DE DOAÇÃO</a></li>
+            <li><a href="../../modulos/campanhas/PagCampanhas.html">CAMPANHAS</a></li>
+            <li><a href="../../modulos/duvidas/index.html">DÚVIDAS</a></li>
+            <li><a href="../../modulos/SobreNos/sobre-nós.html">SOBRE NÓS</a></li>
+        </ul>
+        <div class="perfil">
+            <a href="../../modulos/perfil_doador/pagina_perfil.html">
+                <img src="../../assets/images/foto_perfil.png" alt="Perfil" class="perfil-icon">
+            </a>
+        </div>                
+    </nav>
+</header>
 
     <section class="hero">
         <div class="text-center">
@@ -44,7 +53,7 @@
         <div class="doar-sangue-content">
             <div class="imagem-campanha">
                 <img src="../../assets/images/doe_sangue.png" alt="Doe Sangue">
-                <a href="#" class="btn-campanha">Campanhas</a>
+                <a href="../campanhas/PagCampanhas.html" class="btn-campanha">Campanhas</a>
             </div>
             <div class="texto-motivos">
                 <!-- Lista de motivos para doar sangue -->
@@ -115,7 +124,56 @@
             <button id="btnCadastrar" class="btn-cadastrar" type="submit">Cadastrar</button>
         </form>
     </section>
+    <div class="container">
+        <div class="topo">
+            <div id="map" class="map"></div>
+            <div class="formulario">
+                <h2>Laboratórios para realizar a doação</h2>
+                <div class="grupo">
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep" placeholder="Digite o CEP">
+                    <button>
+                        <i class="fa-solid fa-location-dot"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Rodapé-->
+    <footer>
+        <div id="footer_social">
+            <a href="https://www.instagram.com/ederjairr3/" target="_blank" class="footer-link" id="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
 
+            <a href="https://github.com/ToshiroHytsugaia" target="_blank" class="footer-link" id="Github">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://www.youtube.com/@toshiroherdeirodeaico3707" target="_blank" class="footer-link" id="Youtube">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </div>
+        <div>
+            <p>Email: hemo.contato@gmail.com</p>
+        </div>
+        <div>
+            <p>© 2024 Hemo+. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <div id="map"></div>
+    <script type="text/javascript">
+        var map;
+        function initMap() {
+           map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: -19.92229860562907, lng: -43.9249847432524},
+                zoom: 17,
+        });
+    }
+    </script>
+    <script src="../../assets/js/mobile-navbar-home.js"></script>
     <script src="../../assets/js/script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEMBZydnWXAhGTtcUa2DuaAyk6AjE67EI&callback=initMap" async defer></script>
+    <script src="../../modulos/Eder ti/Mapa.js" defer></script>
 </body>
 </html>

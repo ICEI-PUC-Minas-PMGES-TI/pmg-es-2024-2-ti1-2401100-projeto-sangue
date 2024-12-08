@@ -1,14 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* Reset global */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
 }
 
 /* Estilos para o corpo da página */
 body {
     background-color: #880D1E; /* Cinza claro */
-    font-family: 'Lora', serif;
     margin: 0;
     padding: 0;
 }
@@ -29,8 +31,8 @@ header {
 }
 
 .logo img {
-    width: 150px;
-    height: 60px;
+    width: 145px;
+    height: 70px;
 }
 
 .nav-links {
@@ -68,7 +70,16 @@ header {
 .perfil-icon:hover {
     opacity: 0.8;
 }
-
+/*mobile icon*/
+.mobile-menu div{
+    width: 32px;
+    height: 3px;
+    background-color: #000;
+    margin: 6px;
+}
+.mobile-menu{
+    cursor: pointer;
+}
 /* Estilos do Banner */
 .hero {
     position: relative;
@@ -128,6 +139,56 @@ header {
 .btn-campanha:hover,
 .btn-cadastrar:hover {
     background-color: #d9534f;
+}
+
+/*footer*/
+footer {
+    color: rgb(255, 255, 255);
+    padding: 1.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 1.8rem;
+}
+
+footer div {
+    margin: 0.5rem 0;
+}
+
+#footer_social {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.footer-link {
+    height: 2.5rem;
+    width: 2.5rem;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.footer-link:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+#Instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#Youtube {
+    background-color: rgb(218, 29, 29);
+}
+
+#Github {
+    background: #24292e;
 }
 
 /* Seção "Por que Doar?" */
@@ -459,6 +520,12 @@ p, li {
 }
 
 /* Responsividade para Smartphones */
+
+@media (min-width: 900px) {
+    .mobile-menu{
+        display: none;
+    }
+}
 @media (max-width: 480px) {
     .menu {
         flex-direction: column;
@@ -537,6 +604,60 @@ p, li {
         padding: 8px 16px;
         font-size: 14px;
     }
+    .nav-links{
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 40vh;
+        height: 70vh;
+        background-color: #f5f5f5ad;
+        justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        z-index: 40;
+    }
+    .nav-links li{
+        margin-left: 0;
+        opacity: 0;
+    }
+    .mobile-menu{
+        display: block;
+        float: right;
+        padding-left: 2rem;
+        padding-top: 1.5rem;
+    }
+    .nav-links.active{
+        transform: translateX(0);
+        transition: transform 0.3s ease-in;
+    }
+    .nav-link {
+        color: white;
+    }
+    .nav-links{
+        display: none;
+    }
+    /* Animação dos links no menu */
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 
 /* Estilo do formulário na index.html */

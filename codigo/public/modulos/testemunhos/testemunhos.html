@@ -10,46 +10,36 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../../assets/css/testemunhos.css">
     <script src="../../assets/js/testemunhos.js"></script>
+    <link rel="shortcut icon" href="../../assets/images/icon/favicon.ico" type="image/x-icon">
 </head>
     <body>
         
-        <header class="cor1">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container-fluid">
-                    <img class="logo" src="../../assets/images/logo.png" alt="Hemo+">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">Início</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Doe sangue</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Preciso de doação</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Campanhas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#">Testemunhos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Dúvidas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Sobre nós</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
+        <!--Cabeçalho-->
+    <header>
+        <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    <nav class="menu">
+        <div class="logo">
+            <img src="../../assets/images/logo_nova.png" alt="Logo Doação de Sangue">
+        </div>
+        <ul class="nav-links">
+            <li><a href="../../modulos/HomePage/homepage.html">INÍCIO</a></li>
+            <li><a href="../../modulos/doacao_de_sangue/index.html">DOE SANGUE</a></li>
+            <li><a href="../../modulos/form_receptor_html/index.html">PRECISO DE DOAÇÃO</a></li>
+            <li><a href="../../modulos/campanhas/PagCampanhas.html">CAMPANHAS</a></li>
+            <li><a href="../../modulos/duvidas/index.html">DÚVIDAS</a></li>
+            <li><a href="../../modulos/SobreNos/sobre-nós.html">SOBRE NÓS</a></li>
+        </ul>
+        <div class="perfil">
+            <a href="../../modulos/perfil_doador/pagina_perfil.html">
+                <img src="../../assets/images/foto_perfil.png" alt="Perfil" class="perfil-icon">
+            </a>
+        </div>                
+    </nav>
+</header>
 
         <section class="intro-section text-center cor1 p-3">
             <div class="container">
@@ -126,35 +116,29 @@
             </div>
         </section>
 
-        <footer class="cor1 p-3">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <h4>Hemo+</h4>
-                    </div>
-                    <div class="col-md-4">
-                        <h4>Links úteis</h4>
-                        <ul>
-                            <li><a href="#">Início</a></li>
-                            <li><a href="#">Doe sangue</a></li>
-                            <li><a href="#">Preciso de doação</a></li>
-                            <li><a href="#">Campanhas</a></li>
-                            <li><a href="#">Testemunhos</a></li>
-                            <li><a href="#">Dúvidas</a></li>
-                            <li><a href="#">Sobre nós</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <h4>Contato</h4>
-                        <p>E-mail: hemo.contato@gmail.com</p>
-                        <h4>Redes sociais</h4>
-                        <a href="#" class="bi bi-facebook fs-4"></a>
-                        <a href="#" class="bi bi-instagram fs-4"></a>
-                        <a href="#" class="bi bi-twitter fs-4"></a>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <!--Rodapé-->
+    <footer>
+        <div id="footer_social">
+            <a href="https://www.instagram.com/ederjairr3/" target="_blank" class="footer-link" id="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://github.com/ToshiroHytsugaia" target="_blank" class="footer-link" id="Github">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://www.youtube.com/@toshiroherdeirodeaico3707" target="_blank" class="footer-link" id="Youtube">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </div>
+        <div>
+            <p>Email: hemo.contato@gmail.com</p>
+        </div>
+        <div>
+            <p>© 2024 Hemo+. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="../../js/mobile-navbar-home.js"></script>
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
