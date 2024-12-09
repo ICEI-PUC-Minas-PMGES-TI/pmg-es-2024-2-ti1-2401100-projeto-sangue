@@ -207,7 +207,8 @@ Elementos Visuais:
 Lista de campanhas com títulos, descrições e datas.
 Botão "Criar Campanha".
 
-![WhatsApp Image 2024-12-04 at 16 37 53](https://github.com/user-attachments/assets/e6f756e9-e3d6-4544-abf0-5bf94bf67724)
+![Captura de tela 2024-12-08 232822](https://github.com/user-attachments/assets/15f40400-641c-40dc-aac1-7d743f7c4ba0)
+
 ![WhatsApp Image 2024-12-04 at 16 41 48](https://github.com/user-attachments/assets/eb5c9362-cd0f-40a8-b545-78012990e4e6)
 
 - 3.Tela de Cadastro de Receptores
