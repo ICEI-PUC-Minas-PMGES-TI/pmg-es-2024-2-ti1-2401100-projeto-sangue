@@ -22,10 +22,28 @@ header {
     width: 100%;
 
     background-image: url('../images/banner.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 400px; 
 }
+.header h1 {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    font-size: 3em; /* Tamanho maior por padrão */
+    text-align: center;
+    width: 100%;
+    padding: 0 20px; /* Espaço lateral para não encostar nas bordas em telas pequenas */
+}
+
 header #toggler{
     display: none;
 }
+
 header .fa-bars{
     font-size: 3rem;
     color: #991212;
@@ -54,7 +72,7 @@ header .fa-bars{
 .perfil-icon:hover {
     opacity: 0.8;
 }
-/*mobile icon*/
+/*mobile icon
 .mobile-menu div{
     width: 32px;
     height: 3px;
@@ -63,7 +81,7 @@ header .fa-bars{
 }
 .mobile-menu{
     cursor: pointer;
-}
+}*/
 .menu {
     display: flex;
     justify-content: space-between;
