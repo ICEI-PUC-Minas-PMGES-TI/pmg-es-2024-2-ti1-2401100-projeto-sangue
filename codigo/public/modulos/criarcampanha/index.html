@@ -3,24 +3,36 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../../assets/css/criarcampanha.css">
 </head>
 <body class="bg-pink-200">
-    <header class="bg-pink-300 p-4 flex justify-between items-center">
-<img src="../../assets/images/logo.png" alt="" style="max-width: 120px;">
-        <nav class="space-x-4">
-            <a href="#" class="text-black">INÍCIO</a>
-            <a href="#" class="text-black">DOE SANGUE</a>
-            <a href="#" class="text-black">PRECISO DE DOAÇÃO</a>
-            <a href="#" class="text-black">CAMPANHAS</a>
-            <a href="#" class="text-black">DÚVIDAS</a>
-            <a href="#" class="text-black">SOBRE NÓS</a>
-        </nav>
-        <div class="relative">
-            <input type="text" class="bg-pink-100 p-2 rounded" placeholder="Search">
-            <i class="fas fa-search absolute right-2 top-2 text-gray-500"></i>
+    <header>
+        <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
         </div>
-    </header>
+    <nav class="menu">
+        <div class="logo">
+            <img src="../../assets/images/logo_nova.png" alt="Logo Doação de Sangue">
+        </div>
+        <ul class="nav-links">
+            <li><a href="../../modulos/HomePage/homepage.html">INÍCIO</a></li>
+            <li><a href="../../modulos/doacao_de_sangue/index.html">DOE SANGUE</a></li>
+            <li><a href="../../modulos/form_receptor_html/index.html">PRECISO DE DOAÇÃO</a></li>
+            <li><a href="../../modulos/campanhas/PagCampanhas.html">CAMPANHAS</a></li>
+            <li><a href="../../modulos/testemunhos/testemunhos.html">TESTEMUNHOS</a></li>
+            <li><a href="../../modulos/duvidas/index.html">DÚVIDAS</a></li>
+            <li><a href="../../modulos/SobreNos/sobre-nós.html">SOBRE NÓS</a></li>
+        </ul>
+        <div class="perfil">
+            <a href="../../modulos/perfil_doador/pagina_perfil.html">
+                <img src="../../assets/images/foto_perfil.png" alt="Perfil" class="perfil-icon">
+            </a>
+        </div>                
+    </nav>
+</header>
     <main class="p-8">
         <h1 class="text-center text-2xl mb-8">Campanhas</h1>
         <section class="flex justify-between items-center mb-8">
