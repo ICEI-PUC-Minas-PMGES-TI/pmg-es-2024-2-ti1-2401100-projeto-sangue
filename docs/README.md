@@ -354,6 +354,8 @@ Simular interações entre as telas.
 
 Validar o design com base no feedback da equipe e de usuários potenciais.
 
+video do site : https://drive.google.com/file/d/1T0bvB-LaStjKQlnpRHYpKNg01bmNRMS1/view?usp=drive_link
+
 # 5.4 Acessibilidade e Responsividade
 Acessibilidade: Foram seguidas diretrizes como contraste de cores adequado e alternativas textuais para imagens.
 
